@@ -1,10 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Layout from "./components/Layout";
+import Hero from "./components/Hero";
 
 function App() {
-  return (
-
-  );
+	return (
+		<Layout>
+			<Hero />
+		</Layout>
+	);
 }
 
 export default App;

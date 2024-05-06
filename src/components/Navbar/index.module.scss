@@ -1,0 +1,51 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #000000;
+	font-family: "Lato", sans-serif;
+	width: 1024px;
+	height: 120px;
+	color: white;
+	padding: 50px 100px 30px 100px;
+
+	.logoMain {
+		width: 73px;
+		height: 27px;
+	}
+
+	.navbarItems {
+		display: flex;
+		justify-content: space-around;
+		width: 360px;
+		height: 20px;
+		color: white;
+		font-size: 20px;
+		font-weight: 400;
+		letter-spacing: 0.05rem;
+	}
+
+	.controlMode {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 209px;
+		height: 40px;
+		.switchLogo {
+			width: 56px;
+			height: 32px;
+		}
+
+		.button {
+			display: block;
+			width: 133px;
+			height: 40px;
+			background-color: #925ff0;
+			padding: 12px 24px 12px 24px;
+			border: none;
+			border-radius: 3px;
+			font-size: 16px;
+			font-weight: 400;
+		}
+	}
+}
