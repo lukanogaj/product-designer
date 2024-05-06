@@ -32,10 +32,16 @@ const Wrapper = () => {
 				</div>
 			</div>
 			<div className={styles.portal}>
-				<img src={portal} alt="" />
+				<img
+					className={styles.portalImg}
+					src={portal}
+					width="160px"
+					height="160px"
+					alt=""
+				/>
 			</div>
-			<div>
-				<img src={vintage} alt="" />
+			<div className={styles.vintageImg}>
+				<img src={vintage} width="694px " height="778px" alt="" />
 			</div>
 		</div>
 	);
