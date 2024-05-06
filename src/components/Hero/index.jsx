@@ -1,12 +1,12 @@
 import styles from "./index.module.scss";
 import Navbar from "../Navbar";
-import Main from "../Main";
+import Wrapper from "../Wrapper";
 
 const Hero = () => {
 	return (
 		<div className={styles.hero}>
 			<Navbar />
-			<Main />
+			<Wrapper />
 		</div>
 	);
 };

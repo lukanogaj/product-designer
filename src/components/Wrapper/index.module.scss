@@ -1,0 +1,87 @@
+.wrapper {
+	display: flex;
+	width: 1728px;
+	height: 778px;
+	// background-color: red;
+
+	.main {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: column;
+		width: 820px;
+		height: 695px;
+		margin-top: 60px;
+
+		.headings {
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+			width: 660px;
+			height: 481px;
+			font-family: "Anton", sans-serif;
+
+			// background-color: yellow;
+			.mainHeading,
+			h1 {
+				font-size: 200px;
+				color: #fff;
+				font-weight: 400;
+				line-height: 180px;
+			}
+			.nameHead,
+			h2 {
+				display: inline-block;
+				font-size: 114px;
+				font-weight: 400;
+				line-height: 114px;
+				white-space: nowrap;
+				margin: 18px 0px 70px 0px;
+				background: linear-gradient(to right, #fa709a, #fee140);
+				background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+
+		.socialLinks {
+			display: flex;
+			justify-content: space-between;
+			width: 660px;
+
+			.socialIcon {
+				width: 52px;
+				height: 52px;
+				border: solid #fff 1px;
+				border-radius: 4px;
+				text-align: center;
+				align-content: center;
+			}
+
+			.imgIcons {
+				display: inline-block;
+				text-align: center;
+				width: 40px;
+				height: 40px;
+				align-content: center;
+			}
+		}
+
+		.cvDownload {
+			width: 660px;
+			height: 52px;
+			background-color: red;
+			// font-family: "Lato", sans-serif;
+			// font-weight: 100;
+			// font-size: 20px;
+			// color: #fff;
+		}
+
+		.cvDownload,
+		h4 {
+			font-family: "Lato", sans-serif;
+			font-weight: 400;
+			font-size: 20px;
+			color: #fff;
+		}
+	}
+}
