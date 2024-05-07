@@ -2,6 +2,7 @@ import styles from "./index.module.scss";
 import dataForSocialIcons from "../Assests";
 import portal from "../Assests/portal.png";
 import vintage from "../Assests/vintage.png";
+import arrowDown from "../Assests/Icons/arrow-down.png";
 
 const Wrapper = () => {
 	return (
@@ -28,7 +29,9 @@ const Wrapper = () => {
 					<div>
 						<h4>Download Curriculum Vitae</h4>
 					</div>
-					<div className={styles.cvIcon}></div>
+					<div className={styles.cvIcon}>
+						<img src={arrowDown} width="20px" height="20px" alt="" />
+					</div>
 				</div>
 			</div>
 			<div className={styles.portal}>
