@@ -32,7 +32,7 @@ const WorkEfficiency = () => {
 				</div>
 				<div className={styles.workStats_third}>
 					<div className={styles.headStats}>
-						<h1 className={styles.headStat}>{">"}2K</h1>
+						<h1 className={styles.headStat}>{">2K"}</h1>
 					</div>
 					<div className={styles.statsParagraoh}>
 						<p>

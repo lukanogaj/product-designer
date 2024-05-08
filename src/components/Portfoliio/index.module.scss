@@ -1,0 +1,30 @@
+.portfolio {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	width: 1731px;
+	height: 968px;
+	background-color: blue;
+	margin-top: 200px;
+	font-family: "Anton", sans-serif;
+
+	.portfolioHeading {
+		display: inline-block;
+		margin-left: 100px;
+		font-size: 64px;
+		font-weight: 400;
+		color: #ffffff;
+
+		// position: absolute;
+		// // left: 0;
+	}
+
+	.portfolioWrapper {
+		display: flex;
+		align-items: center;
+		width: 1530px;
+		height: 868px;
+		background-color: green;
+		margin: auto;
+	}
+}

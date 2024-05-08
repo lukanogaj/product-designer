@@ -1,0 +1,14 @@
+.portfolioText {
+	display: flex;
+	width: 1530px;
+	height: 868px;
+	background-color: brown;
+	flex-wrap: wrap;
+
+	.portfolioTextItem {
+		width: 360px;
+		height: 419px;
+		background-color: green;
+		margin: 10px;
+	}
+}

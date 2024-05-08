@@ -1,24 +1,83 @@
-import iconForStats from "../Assests/Icons/dawn.png";
+import frameForPortfolio from "../Assests/frame.png";
 
-const dataForWorkStats = [
+const dataForPortfolio = [
 	{
 		id: 1,
-		heading: "90%",
-		paragraph: " Job Success Score on Upwork",
-		icon: iconForStats,
+		heading: "Mi Portal U",
+		figmaBtn: " Figma Community",
+		frame: frameForPortfolio,
+		btns: ["UX", "Uni", "JS"],
+		btnUX: "UX Design",
+		btnUni: "University",
+		btnJs: "JavaScript",
 	},
 	{
 		id: 2,
-		heading: ">25.000",
-		paragraph: "Duplicates on Figma Community",
-		icon: iconForStats,
+		heading: "Mi Portal U",
+		figmaBtn: "Figma Community",
+		frame: frameForPortfolio,
+
+		btns: ["UX", "Uni", "JS"],
+		btnUX: "UX Design",
+		btnUni: "University",
+		btnJs: "JavaScript",
 	},
 	{
 		id: 3,
-		heading: "> 2K",
-		paragraph: "In Finished Works",
-		icon: iconForStats,
+		heading: "Mi Portal U",
+		figmaBtn: "Figma Commnunity",
+		frame: frameForPortfolio,
+		btns: ["UX", "Uni", "JS"],
+		btnUX: "UX Design",
+		btnUni: "University",
+		btnJs: "JavaScript",
+	},
+	{
+		id: 3,
+		heading: "Mi Portal U",
+		figmaBtn: "Figma Commnunity",
+		frame: frameForPortfolio,
+		btns: ["UX", "Uni", "JS"],
+	},
+	{
+		id: 3,
+		heading: "Mi Portal U",
+		figmaBtn: "Figma Commnunity",
+		frame: frameForPortfolio,
+		btns: ["UX", "Uni", "JS"],
+		btnUX: "UX Design",
+		btnUni: "University",
+		btnJs: "JavaScript",
+	},
+	{
+		id: 3,
+		heading: "Mi Portal U",
+		figmaBtn: "Figma Commnunity",
+		frame: frameForPortfolio,
+		btnUX: "UX Design",
+		btnUni: "University",
+		btnJs: "JavaScript",
+	},
+	{
+		id: 3,
+		heading: "Mi Portal U",
+		figmaBtn: "Figma Commnunity",
+		frame: frameForPortfolio,
+		btns: ["UX", "Uni", "JS"],
+		btnUX: "UX Design",
+		btnUni: "University",
+		btnJs: "JavaScript",
+	},
+	{
+		id: 3,
+		heading: "Mi Portal U",
+		figmaBtn: "Figma Commnunity",
+		frame: frameForPortfolio,
+		btns: ["UX", "Uni", "JS"],
+		btnUX: "UX Design",
+		btnUni: "University",
+		btnJs: "JavaScript",
 	},
 ];
 
-export default dataForWorkStats;
+export default dataForPortfolio;
