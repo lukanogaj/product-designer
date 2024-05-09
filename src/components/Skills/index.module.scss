@@ -1,0 +1,39 @@
+.skills {
+	display: flex;
+	flex-direction: column;
+	width: 1731px;
+	height: 774px;
+	font-family: "Lato", sans-serif;
+	padding: 0px 100px 0px 100px;
+	// background-color: green;
+
+
+  
+
+	.skillsHeading {
+		display: inline-block;
+		& > h1 {
+			display: inline-block;
+			font-size: 64px;
+			font-weight: 400;
+			color: #ffffff;
+		}
+	}
+
+	.skillsWrapper {
+		display: flex;
+		width: 1531px;
+		height: 660px;
+		flex-wrap: wrap;
+
+		// background-color: yellow;
+
+		.skillsContainer {
+			display: flex;
+			// justify-content: space-between;
+			width: 756px;
+			height: 320px;
+			background-color: red;
+		}
+	}
+}
