@@ -1,5 +1,6 @@
 import styles from "./index.module.scss";
 import dataForPortfolio from "../DataForWorkStats";
+import PortfolioLinks from "../PortfolioLinks";
 
 const PortfolioText = () => {
 	return (
@@ -11,6 +12,7 @@ const PortfolioText = () => {
 					</div>
 					<div className={styles.portfolioTextHeading}>
 						<h2 className={styles.portfolioTextHead}>{card.heading}</h2>
+						<PortfolioLinks />
 						<div className={styles.portfolioCardFigmaLink}>{card.figmaBtn}</div>
 					</div>
 				</div>

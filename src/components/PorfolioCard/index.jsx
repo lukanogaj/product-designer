@@ -6,7 +6,6 @@ const PortfolioCard = () => {
 	return (
 		<div className={styles.portfolioCard}>
 			<PortfolioText />
-      <PortfolioLinks/>
 		</div>
 	);
 };

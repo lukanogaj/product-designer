@@ -23,7 +23,7 @@ const dataForPortfolio = [
 		btnJs: "JavaScript",
 	},
 	{
-		id: 3,
+		id: 4,
 		heading: "Mi Portal U",
 		figmaBtn: "Figma Commnunity",
 		frame: frameForPortfolio,
@@ -33,14 +33,14 @@ const dataForPortfolio = [
 		btnJs: "JavaScript",
 	},
 	{
-		id: 3,
+		id: 5,
 		heading: "Mi Portal U",
 		figmaBtn: "Figma Commnunity",
 		frame: frameForPortfolio,
 		btns: ["UX", "Uni", "JS"],
 	},
 	{
-		id: 3,
+		id: 6,
 		heading: "Mi Portal U",
 		figmaBtn: "Figma Commnunity",
 		frame: frameForPortfolio,
@@ -50,7 +50,7 @@ const dataForPortfolio = [
 		btnJs: "JavaScript",
 	},
 	{
-		id: 3,
+		id: 7,
 		heading: "Mi Portal U",
 		figmaBtn: "Figma Commnunity",
 		frame: frameForPortfolio,
@@ -59,7 +59,7 @@ const dataForPortfolio = [
 		btnJs: "JavaScript",
 	},
 	{
-		id: 3,
+		id: 8,
 		heading: "Mi Portal U",
 		figmaBtn: "Figma Commnunity",
 		frame: frameForPortfolio,
