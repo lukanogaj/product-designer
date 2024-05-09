@@ -6,9 +6,18 @@
 	flex-wrap: wrap;
 
 	.portfolioTextItem {
+		display: flex;
+		flex-direction: column;
+		// justify-content: space-around;
 		width: 360px;
 		height: 419px;
 		background-color: green;
 		margin: 10px;
+	}
+
+	.portfolioTextHeading {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 }

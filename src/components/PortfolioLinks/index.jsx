@@ -1,5 +1,5 @@
 import styles from "./index.module.scss";
-import dataForPortfolio from "../DataForWorkStats";
+import dataForPortfolio from "../DataForWorkPortfolio";
 
 const PortfolioLinks = () => {
 	return (
