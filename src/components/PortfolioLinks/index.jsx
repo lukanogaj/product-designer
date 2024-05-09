@@ -1,10 +1,10 @@
 import styles from "./index.module.scss";
-import dataForPortfolio from "../DataForWorkPortfolio";
+import dataForPortfolioBtn from "../DataForPortfolioBtn";
 
 const PortfolioLinks = () => {
 	return (
 		<div className={styles.portfolioLinks}>
-			{dataForPortfolio.map((link) => (
+			{dataForPortfolioBtn.map((link) => (
 				<div className={styles.linksBtn} key={link.id}>
 					<button>{link.btns}</button>
 				</div>

@@ -78,16 +78,6 @@ const dataForPortfolio = [
 		// btnUni: "University",
 		// btnJs: "JavaScript",
 	},
-	{
-		id: 9,
-		heading: "Mi Portal U",
-		figmaBtn: "Figma Commnunity",
-		frame: frameForPortfolio,
-		// btns: ["UX", "Uni", "JS"],
-		// btnUX: "UX Design",
-		// btnUni: "University",
-		// btnJs: "JavaScript",
-	},
 ];
 
 export default dataForPortfolio;
