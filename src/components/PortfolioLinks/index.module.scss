@@ -1,6 +1,16 @@
 .portfolioLinks {
 	display: flex;
+	justify-content: space-between;
 	width: 256px;
 	height: 24px;
-	// background-color: blue;
+	margin-bottom: 23px;
+
+	.linkBtns {
+		width: 84px;
+		height: 24px;
+		background-color: #e9dffc;
+		color: #be9ff6;
+		border: solid 1px #be9ff6;
+		border-radius: 12px;
+	}
 }

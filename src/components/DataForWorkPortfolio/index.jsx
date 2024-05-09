@@ -6,7 +6,13 @@ const dataForPortfolio = [
 		heading: "Mi Portal U",
 		figmaBtn: " Figma Community",
 		frame: frameForPortfolio,
-		btns: ["UX", "Uni", "JS"],
+		// btns: ["UX", "Uni", "JS"],
+
+		// buttons: {
+		// 	bt: { id: 1, btns: "UX Design" },
+		// 	bt: { id: 2, btns: "University" },
+		// 	bt: { id: 3, btns: "JavaScript" },
+		// },
 		// btnUX: "UX Design",
 		// btnUni: "University",
 		// btnJs: "JavaScript",
@@ -16,7 +22,7 @@ const dataForPortfolio = [
 		heading: "Mi Portal U",
 		figmaBtn: "Figma Community",
 		frame: frameForPortfolio,
-		btns: ["UX", "Uni", "JS"],
+		// btns: ["UX", "Uni", "JS"],
 		// btnUX: "UX Design",
 		// btnUni: "University",
 		// btnJs: "JavaScript",

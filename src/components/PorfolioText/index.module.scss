@@ -1,23 +1,58 @@
 .portfolioText {
 	display: flex;
+	justify-content: space-between;
 	width: 1530px;
 	height: 868px;
-	background-color: brown;
 	flex-wrap: wrap;
 
 	.portfolioTextItem {
 		display: flex;
 		flex-direction: column;
-		// justify-content: space-around;
+		justify-content: center;
+
 		width: 360px;
 		height: 419px;
-		background-color: green;
-		margin: 10px;
-	}
+		background-color: #0b0b0b;
+		padding: 30px;
+		border: solid 1px #737373;
+		border-radius: 10px;
 
-	.portfolioTextHeading {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
+		.cardFrame {
+			width: 300px;
+			height: 200px;
+			text-align: center;
+			align-items: center;
+			align-content: center;
+			s & > img {
+				display: inline-block;
+			}
+		}
+
+		.portfolioTextHeading {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			& > h2 {
+				font-family: "Lato", sans-serif;
+				display: inline-block;
+				font-size: 28px;
+				font-weight: 700;
+				color: #fff;
+				margin: 23px 0px 21px 0px;
+			}
+		}
+
+		.portfolioCardFigmaLink {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: "Lato", sans-serif;
+			width: 300px;
+			height: 40px;
+			background-color: #292929;
+			color: #fff;
+			font-size: 16px;
+			text-align: center;
+		}
 	}
 }

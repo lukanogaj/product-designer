@@ -5,8 +5,8 @@ import PortfolioCard from "../PorfolioCard";
 const Portfolio = () => {
 	return (
 		<div className={styles.portfolio}>
-			<h1 className={styles.portfolioHeading}>PORTFOLIO</h1>
 			<div className={styles.portfolioWrapper}>
+				<h1 className={styles.portfolioHeading}>PORTFOLIO</h1>
 				<PortfolioCard />
 			</div>
 		</div>
