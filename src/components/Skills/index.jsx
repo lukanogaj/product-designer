@@ -14,13 +14,15 @@ const Skills = () => {
 							<div className={styles.ellipse}>
 								<img src={skill.skillsImage} alt="" />
 							</div>
-							<div className={styles.skillEllipseValue}>
-								<h1>{skill.heading}</h1>
+							<div className={styles.skillEllipseHeading}>
+								<h1>{skill.ellipseHeading}</h1>
 							</div>
 						</div>
 						<div className={styles.skillText}>
-							<div></div>
-							<div className={styles.skillsWrapperCard}>{skill.paragraph}</div>
+							<div className={styles.skillTextHeading}>
+								<h1>{skill.heading}</h1>
+							</div>
+							<div className={styles.skillTextParagraph}>{skill.paragraph}</div>
 						</div>
 					</div>
 				))}
