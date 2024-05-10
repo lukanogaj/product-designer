@@ -5,6 +5,7 @@ import WorkEfficiency from "../WorkEfficiency";
 import Portfolio from "../Portfoliio";
 import Skills from "../Skills";
 import Feedback from "../Feedback";
+import AboutMe from "../AboutMe";
 
 const Hero = () => {
 	return (
@@ -15,6 +16,7 @@ const Hero = () => {
 			<Portfolio />
 			<Skills />
 			<Feedback />
+			<AboutMe />
 		</div>
 	);
 };

@@ -1,0 +1,16 @@
+.aboutMeHeader {
+	display: flex;
+	width: 543px;
+	height: 64px;
+	background-color: red;
+	font-family: "Anton", sans-serif;
+	text-align: center;
+	align-items: center;
+	& > h1 {
+		font-size: 64px;
+		color: #ffffff;
+		font-weight: 400;
+		margin-right: 38px;
+		white-space: nowrap;
+	}
+}
