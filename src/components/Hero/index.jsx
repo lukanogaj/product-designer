@@ -4,6 +4,7 @@ import Wrapper from "../Wrapper";
 import WorkEfficiency from "../WorkEfficiency";
 import Portfolio from "../Portfoliio";
 import Skills from "../Skills";
+import Feedback from "../Feedback";
 
 const Hero = () => {
 	return (
@@ -13,6 +14,7 @@ const Hero = () => {
 			<WorkEfficiency />
 			<Portfolio />
 			<Skills />
+			<Feedback />
 		</div>
 	);
 };
