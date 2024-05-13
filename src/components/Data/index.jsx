@@ -15,7 +15,7 @@ const data = {
 			paragraph:
 				"I am passionate about never stop learning, I am constantly training and learning about new and changing technology trends that way I bring an updated opinion of the Tech industry.",
 			image: glasses,
-			reversed: "reversed",
+			reversed: "false",
 		},
 		{
 			id: 3,

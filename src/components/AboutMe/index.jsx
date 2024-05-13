@@ -2,7 +2,7 @@ import styles from "./index.module.scss";
 import data from "../Data";
 import AboutMeHeader from "../AboutMeHeader";
 
-const AboutMe = ({ reversed }) => {
+const AboutMe = () => {
 	return (
 		<div className={styles.aboutMe}>
 			<AboutMeHeader />
@@ -11,9 +11,10 @@ const AboutMe = ({ reversed }) => {
 					<div
 						key={detail.id}
 						className={
-							detail.reversed === reversed
+							// styles.aboutMeDetails
+							!detail?.reversed
 								? `${styles.aboutMeDetails}`
-								: `${styles.reverseAboutMeDetails}`
+								: `${styles.reversed}`
 						}
 					>
 						<div className={styles.aboutMeParagraph}>
