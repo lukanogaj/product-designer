@@ -3,6 +3,11 @@ import data from "../Data";
 import AboutMeHeader from "../AboutMeHeader";
 
 const AboutMe = () => {
+	let str =
+		"I am a Product Designer and Frontend Developer, I fully understand the process of design and development of a digital product, my job is to make a product usable and visually appealing, through the Design Thinking methodology I manage to create products that are endearing to users.";
+
+	let arr = str.split("Product Designer");
+	console.log(arr);
 	return (
 		<div className={styles.aboutMe}>
 			<AboutMeHeader />
