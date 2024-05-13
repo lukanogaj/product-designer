@@ -22,13 +22,6 @@
 		justify-content: space-between;
 		width: 1541px;
 
-		// .reversed {
-		// 	display: flex;
-		// 	align-items: center;
-		// 	justify-content: space-between;
-		// 	width: 1541px;
-		// }
-
 		.aboutMeParagraph {
 			width: 665px;
 			height: 324px;
@@ -53,8 +46,21 @@
 
 	.reversed {
 		display: flex;
+		flex-direction: row-reverse;
 		align-items: center;
 		justify-content: space-between;
 		width: 1541px;
+		.aboutMeParagraph {
+			width: 665px;
+			height: 324px;
+			& > p {
+				display: inline-block;
+				font-size: 38px;
+				font-weight: 700;
+				color: #ffffff;
+				letter-spacing: -0.13rem;
+				line-height: 2.5rem;
+			}
+		}
 	}
 }
