@@ -3,15 +3,13 @@ import data from "../Data";
 import AboutMeHeader from "../AboutMeHeader";
 
 const AboutMe = () => {
-	console.log(data.dataForAboutMe[0].paragraph);
-	const par1 =
-		"I am a //Product Designer// and Frontend Developer, I fully understand the process of design and development of a digital product, my job is to make a product usable and visually appealing, through the //Design Thinking// methodology I manage to create products that are endearing to users.";
+	// console.log(data.dataForAboutMe[0].paragraph);
+	// const par1 =
+	// 	"I am a //Product Designer// and Frontend Developer, I fully understand the process of design and development of a digital product, my job is to make a product usable and visually appealing, through the //Design Thinking// methodology I manage to create products that are endearing to users.";
 
-	console.log(par1);
+	// console.log(par1);
 	const splitString = (string) => string.split("//");
-	console.log(splitString(par1));
-
-	// console.log(splitString(data.dataForAboutMe[0].paragraph));
+	// console.log(splitString(par1));
 
 	// console.log(splitString);
 
@@ -29,7 +27,7 @@ const AboutMe = () => {
 								: `${styles.reversed}`
 						}>
 						<div className={styles.aboutMeParagraph}>
-							<p>{detail.paragraph}</p>
+							<p> {console.log(splitString(detail.paragraph))}</p>
 							{/* <span>{parag.paragraph}</span> */}
 						</div>
 						<div className={styles.aboutMeImage}>
