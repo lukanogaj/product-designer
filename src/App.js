@@ -7,8 +7,9 @@ import Portfolio from "./components/Portfoliio";
 import Skills from "./components/Skills";
 import Feedback from "./components/Feedback";
 import AboutMe from "./components/AboutMe";
+// import DesignWords from "./components/DesignWords";
 
-function App({ reversed }) {
+function App({ children, reversed }) {
 	return (
 		<Layout>
 			<Navbar />
@@ -18,6 +19,7 @@ function App({ reversed }) {
 			<Skills />
 			<Feedback />
 			<AboutMe reversed={reversed} />
+			{/* <DesignWords /> */}
 		</Layout>
 	);
 }

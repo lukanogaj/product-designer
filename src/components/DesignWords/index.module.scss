@@ -1,0 +1,14 @@
+.designWords {
+	height: 300px;
+	width: 300px;
+	background-color: red;
+
+	.designWordsSpan {
+		height: 50px;
+		width: 100px;
+		background-color: yellow;
+		& > span {
+			display: block;
+		}
+	}
+}
