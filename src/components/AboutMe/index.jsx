@@ -3,16 +3,28 @@ import data from "../Data";
 import AboutMeHeader from "../AboutMeHeader";
 
 const AboutMe = () => {
-	// console.log(data.dataForAboutMe[0].paragraph);
-	// const par1 =
-	// 	"I am a //Product Designer// and Frontend Developer, I fully understand the process of design and development of a digital product, my job is to make a product usable and visually appealing, through the //Design Thinking// methodology I manage to create products that are endearing to users.";
+	// const replaceStr = data.dataForAboutMe[0].paragraph.replace(
+	// 	/ *\([^)]*\) */g,
+	// 	""
+	// );
 
-	// console.log(par1);
-	const splitString = (string) => string.split("//");
-	// console.log(splitString(par1));
+	const acess = data.dataForAboutMe.map((text, index) => ({
+		text: text.paragraph.split("/"),
+		highlited: true,
+		id: index + 1,
+	}));
+	console.log(acess);
 
-	// console.log(splitString);
+	// let orginalString = data.dataForAboutMe.map((text) => ({
+	// 	text: text.paragraph,
+	// }));
 
+	// let splitString = orginalString.split("*");
+	// console.log(splitString[0]);
+
+	// let obj = {};
+
+	// console.log(acess);
 	return (
 		<div className={styles.aboutMe}>
 			<AboutMeHeader />
@@ -27,8 +39,10 @@ const AboutMe = () => {
 								: `${styles.reversed}`
 						}>
 						<div className={styles.aboutMeParagraph}>
-							<p> {console.log(splitString(detail.paragraph))}</p>
-							{/* <span>{parag.paragraph}</span> */}
+							<p>
+								{detail.paragraph}
+								{/* <span>{detail.paragraph}</span> */}
+							</p>
 						</div>
 						<div className={styles.aboutMeImage}>
 							<img
