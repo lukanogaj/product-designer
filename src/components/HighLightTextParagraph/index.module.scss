@@ -1,0 +1,10 @@
+.paragraphContainer {
+	display: flex;
+	background-color: green;
+
+	.highlitedParagraph {
+		font-size: 24px;
+		color: red;
+		background-color: yellow;
+	}
+}
