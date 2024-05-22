@@ -1,7 +1,7 @@
 import styles from "./index.module.scss";
 import data from "../Data";
 import AboutMeHeader from "../AboutMeHeader";
-import HighLightTextParagraph from "../HighLightTextParagraph";
+import HighLightParagraph from "../HighLightParagraph";
 
 const AboutMe = () => {
 	return (
@@ -17,9 +17,9 @@ const AboutMe = () => {
 								: `${styles.reversed}`
 						}>
 						<div className={styles.aboutMeParagraph}>
-							<HighLightTextParagraph details={detail.paragraph} />
-							{/* <p>{detail.paragraph}</p> */}
-							{/* <HighLightTextParagraph /> */}
+							<HighLightParagraph details={detail.paragraph} />
+
+							{/* <HighLightParagraph details={detail.paragraph} /> */}
 						</div>
 						<div className={styles.aboutMeImage}>
 							<img

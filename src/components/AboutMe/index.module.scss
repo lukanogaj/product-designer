@@ -16,30 +16,11 @@
 		height: 1612px;
 	}
 
-	span {
-		width: 60xp;
-		height: 60px;
-		background-color: red;
-	}
-
 	.aboutMeDetails {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		width: 1541px;
-
-		.aboutMeParagraph {
-			width: 665px;
-			height: 324px;
-			& > p {
-				display: inline-block;
-				font-size: 38px;
-				font-weight: 700;
-				color: #ffffff;
-				letter-spacing: -0.13rem;
-				line-height: 2.5rem;
-			}
-		}
 
 		.aboutMeImage {
 			display: flex;
@@ -49,7 +30,6 @@
 			}
 		}
 	}
-
 	.reversed {
 		display: flex;
 		flex-direction: row-reverse;

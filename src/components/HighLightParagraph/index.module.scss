@@ -1,0 +1,34 @@
+.paragraphContainer {
+	display: inline;
+	justify-content: space-between;
+	background-color: green;
+	font-size: 36px;
+	font-weight: 700;
+	width: 670px;
+	height: 400px;
+	letter-spacing: 0.04rem;
+	white-space: normal;
+
+	// span {
+	// 	display: inline-block;
+	// }
+
+	.highlitedParagraph {
+		display: inline;
+		width: 670px;
+		font-size: 36px;
+		color: #ffffff;
+		background-color: blue;
+		// white-space: normal;
+	}
+
+	.paragraphDefault {
+		display: inline;
+		width: 670px;
+		flex-wrap: wrap;
+		font-size: 36px;
+		color: #ffffff;
+		// background-color: blue;
+		// white-space: normal;
+	}
+}
