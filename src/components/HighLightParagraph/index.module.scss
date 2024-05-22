@@ -1,13 +1,15 @@
 .paragraphContainer {
 	display: inline;
 	justify-content: space-between;
-	background-color: green;
-	font-size: 36px;
 	font-weight: 700;
 	width: 670px;
 	height: 400px;
 	letter-spacing: 0.04rem;
 	white-space: normal;
+
+	.p:nth-child(2):nth-child(2) {
+		background-color: blue;
+	}
 
 	// span {
 	// 	display: inline-block;
@@ -18,8 +20,14 @@
 		width: 670px;
 		font-size: 36px;
 		color: #ffffff;
+		// background-color: blue;
+		background: linear-gradient(to right, #fa709a, #fee140);
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.highlitedParagraph:nth-child(2) {
 		background-color: blue;
-		// white-space: normal;
 	}
 
 	.paragraphDefault {
@@ -28,7 +36,5 @@
 		flex-wrap: wrap;
 		font-size: 36px;
 		color: #ffffff;
-		// background-color: blue;
-		// white-space: normal;
 	}
 }
