@@ -18,8 +18,6 @@ const AboutMe = () => {
 						}>
 						<div className={styles.aboutMeParagraph}>
 							<HighLightParagraph details={detail.paragraph} />
-
-							{/* <HighLightParagraph details={detail.paragraph} /> */}
 						</div>
 						<div className={styles.aboutMeImage}>
 							<img

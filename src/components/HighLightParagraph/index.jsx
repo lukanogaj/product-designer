@@ -3,11 +3,8 @@ import data from "../Data";
 
 const HighLightParagraph = ({ details }) => {
 	const detailsArray = details.split("/");
-	// console.log(detailsArray);
 
 	const highLightedParagraph = detailsArray.map((detail) => {
-		// console.log(detail);
-		// detail.includes("*") ? console.log("Hello") : console.log("No Hello");
 		if (detail.includes("*")) {
 			return {
 				text: detail.replaceAll("*", ""),
@@ -24,7 +21,7 @@ const HighLightParagraph = ({ details }) => {
 	return (
 		<div className={styles.paragraphContainer}>
 			<p>
-				{highLightedParagraph.map((item) => (
+				{highLightedParagraph.map((item, index) => (
 					<span
 						key={item.text}
 						className={

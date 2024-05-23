@@ -11,21 +11,14 @@
 		background-color: blue;
 	}
 
-
-
 	.highlitedParagraph {
 		display: inline;
 		width: 670px;
 		font-size: 36px;
 		color: #ffffff;
-		// background-color: blue;
 		background: linear-gradient(to right, #fa709a, #fee140);
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
-	}
-
-	.highlitedParagraph:nth-child(2) {
-		background-color: blue;
 	}
 
 	.paragraphDefault {
@@ -34,5 +27,42 @@
 		flex-wrap: wrap;
 		font-size: 36px;
 		color: #ffffff;
+	}
+
+	/// Backgrounds colours for highligted spans
+	.firstParag {
+		background-color: linear-gradient(to right, #fa709a, #fee140);
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	// Second poaragraph with two diffrent linears set
+	.secondParagFirstLinear {
+		background-color: linear-gradient(to left, #84fab0, #8fd3f4);
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	.secondParagSecondLinear {
+		background-color: linear-gradient(to right, #84fab0, #8fd3f4);
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	// Third Paragraph with two diffrent linear
+	.thirdParagFirstLinear {
+		background-color: #e0c3fc, #8ec5fc;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.thirdParagSecondLinear {
+		background-color: to right,
+			linear-gradient(
+				89.9deg,
+				#ffe76a 6.02%,
+				#65c8ff 7%,
+				#65c8ff 14.18%,
+				#65c8ff 20.09%,
+				#ff0000 20.1%
+			);
 	}
 }

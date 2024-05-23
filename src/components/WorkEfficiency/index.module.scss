@@ -1,103 +1,55 @@
 .workEfficiency {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	width: 1731px;
 	height: 392px;
 	background-color: #000;
 	align-items: center;
-	// margin-top: 143px;
-
 	font-family: "Anton", sans-serif;
 	align-items: center;
 
-	.worksStatsContainer {
+
+
+	.workStats_first {
 		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		margin-top: 143px;
-		width: 1531px;
-		height: 372px;
-		background-color: green;
-		border: solid 1px #646464;
-		border-radius: 29px;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 287px;
+		height: 208px;
+		background-color: yellow;
+		// margin: auto;
+	}
 
-		.workStats_first {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			width: 287px;
-			height: 208px;
-			background-color: yellow;
-			// margin: auto;
-		}
+	.workStats_second {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 387px;
+		height: 208px;
+		background-color: #fff;
+	}
 
-		.workStats_second {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			width: 387px;
-			height: 208px;
-			background-color: #fff;
-		}
+	.workStats_third {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 190px;
+		height: 208px;
+		background-color: red;
+	}
 
-		.workStats_third {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			width: 190px;
-			height: 208px;
-			background-color: red;
-		}
+	.headStats,
+	.headStat {
+		display: block;
+		font-family: "Anton", sans-serif;
+		font-size: 128px;
+		font-weight: 400;
+		color: #c8fec7;
+	}
 
-		.headStats,
-		.headStat {
-			display: block;
-			font-family: "Anton", sans-serif;
-			font-size: 128px;
-			font-weight: 400;
-			color: #c8fec7;
-		}
-
-		.statsParagraph,
-		p {
-			display: block;
-			background-color: blue;
-		}
-
-		// 	.headStats {
-		// 		height: 115px;
-		// 		background-color: green;
-		// 		align-items: center;
-		// 		align-content: center;
-		// 	}
-
-		// 	.headStats,
-		// 	.headStat {
-		// 		display: inline-block;
-		// 		font-family: "Anton", sans-serif;
-		// 		font-size: 128px;
-		// 		font-weight: 400;
-		// 		color: #c8fec7;
-		// 		height: 115px;
-		// 		// text-align: cen;
-		// 		// margin: 82px 0px 82px 100px;
-		// 	}
-
-		// 	.statsIcon,
-		// 	img {
-		// 		display: inline-block;
-		// 		margin-left: 200px;
-		// 		// margin: 77px;
-		// 		background-color: purple;
-		// 	}
-		// }
-
-		// .statsIcon,
-		// img {
-		// 	display: inline-block;
-		// 	// margin: 77px;
-		// 	margin: auto;
-		// 	background-color: purple;
-		// }
+	.statsParagraph,
+	p {
+		display: block;
+		background-color: blue;
 	}
 }
