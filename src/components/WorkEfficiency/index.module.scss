@@ -1,14 +1,15 @@
 .workEfficiency {
 	display: flex;
 	justify-content: space-around;
-	width: 1731px;
+	width: 1531px;
 	height: 392px;
+	border: solid #646464 1px;
+	border-radius: 29px;
 	background-color: #000;
 	align-items: center;
 	font-family: "Anton", sans-serif;
 	align-items: center;
-
-
+	margin: 153px 100px 0px 100px;
 
 	.workStats_first {
 		display: flex;
@@ -16,8 +17,6 @@
 		justify-content: space-between;
 		width: 287px;
 		height: 208px;
-		background-color: yellow;
-		// margin: auto;
 	}
 
 	.workStats_second {
@@ -26,7 +25,6 @@
 		justify-content: space-between;
 		width: 387px;
 		height: 208px;
-		background-color: #fff;
 	}
 
 	.workStats_third {
@@ -35,21 +33,25 @@
 		justify-content: space-between;
 		width: 190px;
 		height: 208px;
-		background-color: red;
 	}
 
-	.headStats,
-	.headStat {
+	.headStats {
 		display: block;
 		font-family: "Anton", sans-serif;
-		font-size: 128px;
-		font-weight: 400;
-		color: #c8fec7;
+
+		& > h1 {
+			display: block;
+			font-family: "Anton", sans-serif;
+			font-size: 128px;
+			font-weight: 400;
+			color: #c8fec7;
+		}
 	}
 
-	.statsParagraph,
-	p {
+	.statsParagraph {
 		display: block;
-		background-color: blue;
+		& > p {
+			display: block;
+		}
 	}
 }
