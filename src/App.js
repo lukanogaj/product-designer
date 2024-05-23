@@ -8,6 +8,7 @@ import Skills from "./components/Skills";
 import Feedback from "./components/Feedback";
 import AboutMe from "./components/AboutMe";
 import Frame from "./components/Frame";
+import Footer from "./components/Footer";
 
 function App() {
 	return (
@@ -20,6 +21,7 @@ function App() {
 			<Feedback />
 			<AboutMe />
 			<Frame />
+			<Footer />
 		</Layout>
 	);
 }
