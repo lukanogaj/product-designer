@@ -21,8 +21,6 @@ const HighLightParagraph = ({ details }) => {
 		}
 	});
 
-	console.log(highLightedParagraph);
-
 	return (
 		<div className={styles.paragraphContainer}>
 			<p>

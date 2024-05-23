@@ -1,0 +1,40 @@
+.frameContainer {
+	display: flex;
+	align-content: center;
+	text-align: center;
+	align-items: center;
+	font-family: "Lato", sans-serif;
+	margin-top: 230px;
+	width: 1731px;
+	height: 180px;
+	background-color: #000000;
+
+	.frameWrapper {
+		display: flex;
+		align-items: center;
+		justify-content: right;
+		margin: auto;
+		border-radius: 15px;
+
+		width: 1528px;
+		position: relative;
+		background-color: #a87ff3;
+
+		.vintageImage {
+			position: absolute;
+			left: 10px;
+			bottom: -5px;
+		}
+
+		.frameParagraph {
+			width: 1011px;
+			height: 44px;
+			text-align: left;
+			& > p {
+				color: #ffffff;
+				font-size: 22px;
+				font-weight: 700;
+			}
+		}
+	}
+}

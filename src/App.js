@@ -7,10 +7,9 @@ import Portfolio from "./components/Portfoliio";
 import Skills from "./components/Skills";
 import Feedback from "./components/Feedback";
 import AboutMe from "./components/AboutMe";
-// import HighLightTextParagraph from "./components/HighLightTextParagraph";
-// import DesignWords from "./components/DesignWords";
+import Frame from "./components/Frame";
 
-function App({ children, reversed }) {
+function App() {
 	return (
 		<Layout>
 			<Navbar />
@@ -20,7 +19,7 @@ function App({ children, reversed }) {
 			<Skills />
 			<Feedback />
 			<AboutMe />
-			{/* <HighLightTextParagraph /> */}
+			<Frame />
 		</Layout>
 	);
 }
