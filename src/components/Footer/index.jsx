@@ -1,17 +1,11 @@
 import styles from "./index.module.scss";
+import NavbarItems from "../NavbarItems";
 
 const Footer = () => {
 	return (
-		<div>
+		<div className={styles.footer}>
 			<div></div>
-			<div>
-				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
-			</div>
+			<NavbarItems />
 		</div>
 	);
 };

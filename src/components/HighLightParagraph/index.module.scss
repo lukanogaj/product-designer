@@ -16,7 +16,7 @@
 		width: 670px;
 		font-size: 36px;
 		color: #ffffff;
-		background: linear-gradient(to right, #fa709a, #fee140);
+		// background: linear-gradient(to right, #fa709a, #fee140);
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
@@ -29,32 +29,27 @@
 		color: #ffffff;
 	}
 
-	/// Backgrounds colours for highligted spans
-	.firstParag {
+	// Backgrounds colours for highligted spans
+	.redClass {
 		background-color: linear-gradient(to right, #fa709a, #fee140);
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
 	// Second poaragraph with two diffrent linears set
-	.secondParagFirstLinear {
+	.greenClass {
 		background-color: linear-gradient(to left, #84fab0, #8fd3f4);
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
-	.secondParagSecondLinear {
-		background-color: linear-gradient(to right, #84fab0, #8fd3f4);
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
 
 	// Third Paragraph with two diffrent linear
-	.thirdParagFirstLinear {
+	.blueClass {
 		background-color: #e0c3fc, #8ec5fc;
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
 
-	.thirdParagSecondLinear {
+	.rainbowClass {
 		background-color: to right,
 			linear-gradient(
 				89.9deg,
@@ -66,3 +61,12 @@
 			);
 	}
 }
+
+
+
+	// const colors = [
+	// 	" linear-gradient(90deg, #FA709A 0%, #FEE140 100%)",
+	// 	"linear-gradient(90deg, #84FAB0 0%, #8FD3F4 100%)",
+	// 	" linear-gradient(90deg, #E0C3FC 0%, #8EC5FC 100%)",
+	// 	"linear-gradient(89.9deg, #FFE76A 6.02%, #65C8FF 7%, #65C8FF 14.18%, #65C8FF 20.09%, #FF0000 20.1%)",
+	// ];

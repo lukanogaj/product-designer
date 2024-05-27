@@ -17,7 +17,10 @@ const AboutMe = () => {
 								: `${styles.reversed}`
 						}>
 						<div className={styles.aboutMeParagraph}>
-							<HighLightParagraph details={detail.paragraph} />
+							<HighLightParagraph
+								details={detail.paragraph}
+								color={detail.color}
+							/>
 						</div>
 						<div className={styles.aboutMeImage}>
 							<img
