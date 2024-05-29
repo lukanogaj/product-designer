@@ -15,7 +15,7 @@ const HighLightParagraph = ({ details, color }) => {
 	const highLightedParagraph = detailsArray.map((detail, index) => {
 		if (detail.includes("*")) {
 			return {
-				text: detail.replaceAll("*", "").forEach(detail.push(index + 1)),
+				text: detail.replaceAll("*", ""),
 				highlited: true,
 				color: data.dataForAboutMe.color,
 			};
