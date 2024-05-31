@@ -4,6 +4,9 @@ import switchLogo from "../Assests/Icons/switchmode.png";
 import NavbarItems from "../NavbarItems";
 
 const Navbar = () => {
+	const handleDarkMode = () => {
+		console.log("clicked");
+	};
 	return (
 		<div className={styles.navbar}>
 			<div className={styles.logoMain}>
@@ -20,7 +23,11 @@ const Navbar = () => {
 						alt=""
 					/>
 				</div>
-				<button className={styles.button}>Contact Me</button>
+				<button
+					onClick={() => handleDarkMode()}
+					className={styles.button}>
+					Contact Me
+				</button>
 			</div>
 		</div>
 	);

@@ -16,3 +16,28 @@
 	width: 1731px;
 	background-color: #000;
 }
+
+// .lightMode {
+// 	background-color: #ffff;
+// }
+
+@media screen and (max-width: 1366px) {
+	.container {
+		background-color: yellow;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.container {
+		background-color: green;
+	}
+}
+@media screen and (max-width: 768px) {
+	.container {
+		background-color: blue;
+	}
+}
+@media screen and (max-width: 480px) {
+	.container {
+		background-color: purple;
+	}
+}
