@@ -7,16 +7,12 @@
 	letter-spacing: 0.04rem;
 	white-space: normal;
 
-	.p:nth-child(2):nth-child(2) {
-		background-color: blue;
-	}
-
 	.highlitedParagraph {
 		display: inline;
 		width: 670px;
 		font-size: 36px;
 		color: #ffffff;
-		// background: linear-gradient(to right, #fa709a, #fee140);
+		background: linear-gradient(to right, #fa709a, #fee140);
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
@@ -29,7 +25,7 @@
 		color: #ffffff;
 	}
 
-	// Backgrounds colours for highligted spans
+	// Backgrounds colors for highligted spans
 	.redClass {
 		background-color: linear-gradient(to right, #fa709a, #fee140);
 		background-clip: text;
@@ -61,12 +57,3 @@
 			);
 	}
 }
-
-
-
-	// const colors = [
-	// 	" linear-gradient(90deg, #FA709A 0%, #FEE140 100%)",
-	// 	"linear-gradient(90deg, #84FAB0 0%, #8FD3F4 100%)",
-	// 	" linear-gradient(90deg, #E0C3FC 0%, #8EC5FC 100%)",
-	// 	"linear-gradient(89.9deg, #FFE76A 6.02%, #65C8FF 7%, #65C8FF 14.18%, #65C8FF 20.09%, #FF0000 20.1%)",
-	// ];

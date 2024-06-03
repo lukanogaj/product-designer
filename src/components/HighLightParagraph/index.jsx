@@ -7,17 +7,19 @@ const HighLightParagraph = ({ details, color }) => {
 
 	console.log(detailsArray);
 	// console.log(data.dataForAboutMe);
+	// console.log(detailsArray[0]);
 
 	// data.dataForAboutMe.forEach(function (element) {
 	// 	console.log(element.color);
 	// });
 
 	const highLightedParagraph = detailsArray.map((detail, index) => {
+		console.log(color);
 		if (detail.includes("*")) {
 			return {
 				text: detail.replaceAll("*", ""),
 				highlited: true,
-				color: data.dataForAboutMe.color,
+				color: color,
 			};
 		} else {
 			return {
@@ -27,7 +29,7 @@ const HighLightParagraph = ({ details, color }) => {
 		}
 	});
 
-	// console.log(highLightedParagraph);
+	console.log(highLightedParagraph);
 
 	return (
 		<div className={styles.paragraphContainer}>
@@ -36,8 +38,8 @@ const HighLightParagraph = ({ details, color }) => {
 					<span
 						key={item.text}
 						className={
-							item.highlited === true && index[0]
-								? `${styles.highlitedParagraph}``${styles[color[0]]}`
+							item.highlited
+								? `${styles.highlitedParagraph}`
 								: `${styles.paragraphDefault}`
 						}>
 						{item.text}

@@ -1,3 +1,17 @@
+body {
+	--bkg-color: #000000;
+}
+
+body.light-theme {
+	--bkg-color: #ffffff;
+}
+
+body {
+	background: var(--bkg-color);
+}
+
+
+
 .navbar {
 	display: flex;
 	justify-content: space-between;

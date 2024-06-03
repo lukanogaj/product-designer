@@ -1,8 +1,9 @@
 import styles from "./index.module.scss";
+import useLocalStorage from "use-local-storage";
 import logo from "../Assests/Icons/logo.png";
 import switchLogo from "../Assests/Icons/switchmode.png";
 import NavbarItems from "../NavbarItems";
-
+  
 const Navbar = () => {
 	const handleDarkMode = () => {
 		console.log("clicked");
@@ -17,14 +18,16 @@ const Navbar = () => {
 			</div>
 			<NavbarItems />
 			<div className={styles.controlMode}>
-				<div className={styles.switchLogo}>
+				<div
+					className={styles.switchLogo}
+					onClick={() => handleDarkMode()}>
 					<img
 						src={switchLogo}
 						alt=""
 					/>
 				</div>
 				<button
-					onClick={() => handleDarkMode()}
+					// onClick={() => handleDarkMode()}
 					className={styles.button}>
 					Contact Me
 				</button>
