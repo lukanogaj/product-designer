@@ -5,7 +5,6 @@ import classNames from "classnames";
 const WorkEfficiency = () => {
 	return (
 		<div className={styles.workEfficiency}>
-			{/* <div className={styles.worksStatsContainer}> */}
 			<div className={styles.workStats_first}>
 				<div className={styles.headStats}>
 					<h1 className={styles.headStat}>90%</h1>
@@ -28,7 +27,7 @@ const WorkEfficiency = () => {
 				<div className={styles.headStats}>
 					<h1 className={styles.headStat}>{">"}25.000</h1>
 				</div>
-				<div className={styles.statsParagraoh}>
+				<div className={styles.statsParagraph}>
 					<p>Duplicates on Figma Commnunity</p>
 				</div>
 			</div>
@@ -44,13 +43,12 @@ const WorkEfficiency = () => {
 				<div className={styles.headStats}>
 					<h1 className={styles.headStat}>{">2K"}</h1>
 				</div>
-				<div className={styles.statsParagraoh}>
+				<div className={styles.statsParagraph}>
 					<p>
 						In Finished <br /> Works
 					</p>
 				</div>
 			</div>
-			{/* </div> */}
 		</div>
 	);
 };
