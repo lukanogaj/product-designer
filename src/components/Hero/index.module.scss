@@ -80,14 +80,17 @@
 			right: 180px;
 		}
 
-		.cvDownload,
-		h4 {
+		.cvDownload {
 			display: inline-block;
 			font-family: "Lato", sans-serif;
-			font-weight: 400;
-			font-size: 20px;
-			color: #fff;
 			align-content: center;
+
+			& > h4 {
+				font-weight: 400;
+				font-size: 20px;
+				color: #fff;
+				align-content: center;
+			}
 		}
 	}
 
@@ -95,9 +98,36 @@
 		width: 160x;
 		height: 160px;
 		margin-right: 19px;
+		background-color: yellow;
 	}
 
 	.vintageImg {
 		margin-right: 95px;
 	}
 }
+
+// Media query for tablet
+@media screen and (max-width: 1024px) {
+	.hero {
+		width: 1024px;
+		height: 695px;
+		background-color: green;
+		.portal {
+			display: none;
+		}
+		.vintageImg {
+			display: none;
+		}
+
+		.main {
+			align-items: center;
+		}
+	}
+}
+
+// // Media query mobile
+// @media screen and (max-width: 430px) {
+// 	.navbar {
+// 		background-color: purple;
+// 	}
+// }

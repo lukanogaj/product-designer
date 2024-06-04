@@ -14,7 +14,7 @@ const HighLightParagraph = ({ details, color }) => {
 	// });
 
 	const highLightedParagraph = detailsArray.map((detail, index) => {
-		console.log(color);
+		// console.log(color);
 		if (detail.includes("*")) {
 			return {
 				text: detail.replaceAll("*", ""),
@@ -39,7 +39,7 @@ const HighLightParagraph = ({ details, color }) => {
 						key={item.text}
 						className={
 							item.highlited
-								? `${styles.highlitedParagraph}`
+								? `${styles.rainbowClass}`
 								: `${styles.paragraphDefault}`
 						}>
 						{item.text}

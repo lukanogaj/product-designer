@@ -10,8 +10,6 @@ body {
 	background: var(--bkg-color);
 }
 
-
-
 .navbar {
 	display: flex;
 	justify-content: space-between;
@@ -63,3 +61,36 @@ body {
 		}
 	}
 }
+
+// Media query for tablet
+@media screen and (max-width: 1024px) {
+	.navbar {
+		width: 1024px;
+	}
+}
+
+// // Media query mobile
+// @media screen and (max-width: 430px) {
+// 	.navbar {
+// 		background-color: purple;
+// 	}
+// }
+
+//
+// @media screen and (max-width: 1366px) {
+// 	.container {
+// 		background-color: yellow;
+// 	}
+// }
+
+//
+// @media screen and (max-width: 768px) {
+// 	.container {
+// 		background-color: blue;
+// 	}
+// }
+// @media screen and (max-width: 480px) {
+// 	.container {
+// 		background-color: purple;
+// 	}
+// }
