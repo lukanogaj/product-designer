@@ -23,7 +23,7 @@ body {
 
 	.logoMain {
 		width: 4.56em;
-		height: 1.69em;
+		height: 27px;
 	}
 
 	.controlMode {
@@ -31,20 +31,20 @@ body {
 		justify-content: space-between;
 		align-items: center;
 		width: 13em;
-		height: 2.5em;
+		height: 40px;
 		.switchLogo {
 			width: 3.5em;
-			height: 2em;
+			height: 32px;
 		}
 
 		.button {
 			display: block;
 			width: 8.3em;
-			height: 2.5em;
+			height: 40px;
 			background-color: #925ff0;
 			padding: 0.75em 1.5em 0.75em 1.5em;
 			border: none;
-			border-radius: 0.188em;
+			border-radius: 3px;
 			font-size: 1em;
 			font-weight: 400;
 		}
