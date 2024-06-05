@@ -1,6 +1,7 @@
 import childPicture from "../images/child.png";
 import countryPicture from "../images/conutryside.png";
 import glasses from "../images/glasses.png";
+import frameForPortfolio from "../Assests/frame.png";
 
 const data = {
 	dataForAboutMe: [
@@ -26,6 +27,63 @@ const data = {
 			image: countryPicture,
 			color: ["redClass", "greenClass", "blueClass", "rainbowClass"],
 		},
+	],
+
+	dataForPortfolio: [
+		{
+			id: 1,
+			heading: "Mi Portal U",
+			figmaBtn: " Figma Community",
+			frame: frameForPortfolio,
+		},
+		{
+			id: 2,
+			heading: "Mi Portal U",
+			figmaBtn: "Figma Community",
+			frame: frameForPortfolio,
+		},
+		{
+			id: 3,
+			heading: "Mi Portal U",
+			figmaBtn: "Figma Community",
+			frame: frameForPortfolio,
+		},
+		{
+			id: 4,
+			heading: "Mi Portal U",
+			figmaBtn: "Figma Commnunity",
+			frame: frameForPortfolio,
+		},
+		{
+			id: 5,
+			heading: "Mi Portal U",
+			figmaBtn: "Figma Commnunity",
+			frame: frameForPortfolio,
+		},
+		{
+			id: 6,
+			heading: "Mi Portal U",
+			figmaBtn: "Figma Commnunity",
+			frame: frameForPortfolio,
+		},
+		{
+			id: 7,
+			heading: "Mi Portal U",
+			figmaBtn: "Figma Commnunity",
+			frame: frameForPortfolio,
+		},
+		{
+			id: 8,
+			heading: "Mi Portal U",
+			figmaBtn: "Figma Commnunity",
+			frame: frameForPortfolio,
+		},
+	],
+
+	dataForPortfolioBtn: [
+		{ id: 1, btns: "UX Design" },
+		{ id: 2, btns: "University" },
+		{ id: 3, btns: "JavaScript" },
 	],
 };
 

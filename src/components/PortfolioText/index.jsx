@@ -1,14 +1,19 @@
 import styles from "./index.module.scss";
-import dataForPortfolio from "../DataForWorkPortfolio";
+// import dataForPortfolio from "../DataForWorkPortfolio";
 import PortfolioLinks from "../PortfolioLinks";
-
+import dataForPortfolio from "../DataForWorkPortfolio";
 const PortfolioText = () => {
 	return (
 		<div className={styles.portfolioText}>
 			{dataForPortfolio.map((card) => (
-				<div key={card.id} className={styles.portfolioTextItem}>
+				<div
+					key={card.id}
+					className={styles.portfolioTextItem}>
 					<div className={styles.cardFrame}>
-						<img src={card.frame} alt="" />
+						<img
+							src={card.frame}
+							alt=""
+						/>
 					</div>
 					<div className={styles.portfolioTextHeading}>
 						<h2 className={styles.portfolioTextHead}>{card.heading}</h2>

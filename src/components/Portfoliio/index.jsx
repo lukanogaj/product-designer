@@ -1,6 +1,6 @@
 import styles from "./index.module.scss";
 import PortfolioCard from "../PorfolioCard";
-// import PortfolioLinks from "../PortfolioLinks";
+import PortfolioLinks from "../PortfolioLinks";
 
 const Portfolio = () => {
 	return (
