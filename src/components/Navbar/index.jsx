@@ -3,7 +3,7 @@ import useLocalStorage from "use-local-storage";
 import logo from "../Assests/Icons/logo.png";
 import switchLogo from "../Assests/Icons/switchmode.png";
 import NavbarItems from "../NavbarItems";
-  
+
 const Navbar = () => {
 	const handleDarkMode = () => {
 		console.log("clicked");
@@ -26,9 +26,8 @@ const Navbar = () => {
 						alt=""
 					/>
 				</div>
-				<button
-					// onClick={() => handleDarkMode()}
-					className={styles.button}>
+				<button className={styles.btnNavbar}>
+					{/* // onClick={() => handleDarkMode()} */}
 					Contact Me
 				</button>
 			</div>

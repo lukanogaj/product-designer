@@ -5,7 +5,7 @@ import { type } from "@testing-library/user-event/dist/type";
 const HighLightParagraph = ({ details, color }) => {
 	const detailsArray = details.split("/");
 
-	console.log(detailsArray);
+	// console.log(detailsArray);
 	// console.log(data.dataForAboutMe);
 	// console.log(detailsArray[0]);
 
@@ -29,7 +29,7 @@ const HighLightParagraph = ({ details, color }) => {
 		}
 	});
 
-	console.log(highLightedParagraph);
+	// console.log(highLightedParagraph);
 
 	return (
 		<div className={styles.paragraphContainer}>

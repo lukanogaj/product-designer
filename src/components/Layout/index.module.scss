@@ -29,8 +29,13 @@ body {
 	font-family: "Anton", sans-serif;
 	flex-direction: column;
 	margin: auto;
-	width: 108.18em;
-	// background-color: #000;
+	width: 90.709%;
+}
+
+@media screen and (max-width: 1024px) {
+	.container {
+		width: 100%;
+	}
 }
 
 // @media screen and (max-width: 1366px) {
@@ -38,10 +43,7 @@ body {
 // 		background-color: yellow;
 // 	}
 // }
-// @media screen and (max-width: 1024px) {
-// 	.container {
-// 		background-color: green;
-// 	}
+
 // }
 // @media screen and (max-width: 768px) {
 // 	.container {
