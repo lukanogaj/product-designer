@@ -1,7 +1,7 @@
 .workEfficiency {
 	display: flex;
 	justify-content: space-around;
-	width: 95.68rem;
+	width: 88.716%;
 	height: 392px;
 	border: solid #646464 1px;
 	border-radius: 29px;
@@ -11,11 +11,16 @@
 	align-items: center;
 	margin: 153px 100px 0px 100px;
 
+	.statsIcon {
+		width: 5.226%;
+		height: 80px;
+	}
+
 	.workStats_first {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		width: 17.93em;
+		width: 18.746%;
 		height: 208px;
 	}
 
@@ -23,7 +28,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		width: 24.18em;
+		width: 25.278%;
 		height: 208px;
 	}
 
@@ -31,7 +36,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		width: 11.87em;
+		width: 10.778%;
 		height: 208px;
 	}
 
@@ -114,5 +119,16 @@
 		.statsIcon {
 			display: none;
 		}
+	}
+}
+
+// Media query for tablet
+@media screen and (max-width: 1024px) {
+}
+
+// Media query just for the images
+@media screen and (max-width: 1728px) {
+	.statsIcon {
+		display: none;
 	}
 }

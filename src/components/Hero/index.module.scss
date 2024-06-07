@@ -9,7 +9,7 @@
 		display: flex;
 		justify-content: space-between;
 		flex-direction: column;
-		width: 69%;
+		width: 43.2%;
 		height: 695px;
 		// padding: 106px 0px 0px 100px;
 
@@ -42,18 +42,6 @@
 				-webkit-text-fill-color: transparent;
 			}
 		}
-
-		// .feedbackHeading {
-		// 	width: 420px;
-		// 	height: 50px;
-		// 	// margin-top: 147px;
-		// 	& > h1 {
-		// 		color: #ffffff;
-		// 		font-size: 48px;
-		// 		white-space: nowrap;
-		// 		font-weight: 600;
-		// 	}
-		// }
 
 		.socialLinks {
 			display: flex;
@@ -146,15 +134,24 @@
 					text-align: left;
 				}
 
-        .nameHead{
-          font-size: 2.54em;
-        }
+				.nameHead {
+					font-size: 2.54em;
+				}
 			}
 
 			.socialLinks {
 				width: 100%;
 			}
 		}
+	}
+}
+
+
+
+// Media query just for the images 
+@media screen and (max-width: 1728px) {
+	.vintageImg {
+		display: none;
 	}
 }
 
