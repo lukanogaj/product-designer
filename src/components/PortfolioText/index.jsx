@@ -1,16 +1,39 @@
 import styles from "./index.module.scss";
 import PortfolioLinks from "../PortfolioLinks";
 import dataForPortfolio from "../DataForWorkPortfolio";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useRef } from "react";
 const PortfolioText = () => {
+	//Function
+	// // Custom Hook for slicing the array
+	// const useDecreimentArray = () => {
+	// 	return dataForPortfolio.slice(4);
+	// };
+	// useDecreimentArray();
+	// const windowSize = useRef([window.innerWidth, window.innerHeight]);
+	const useSize = () => {
+		const [windowSize, setWindowSize] = useState([
+			window.innerHeight,
+			window.innerWidth,
+		]);
 
-  // Custom Hook for slicing the array
-	const useDecrementArray = () => {
-		return dataForPortfolio.slice(4);
+		useEffect(() => {
+			const windowSizeHandler = () => {
+				setWindowSize([window.innerWidth, window.innerHeight]);
+			};
+			window.addEventListener("resize", windowSizeHandler);
+			return () => {
+				window.removeEventListener("resize", windowSizeHandler);
+			};
+		}, []);
+		return windowSize;
 	};
+	const windowsize = useSize();
+
+	console.log(windowsize);
+
 
   
-	console.log(useDecrementArray());
 	return (
 		<div className={styles.portfolioText}>
 			{dataForPortfolio.map((card) => (
