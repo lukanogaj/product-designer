@@ -5,6 +5,7 @@
 	height: 778px;
 	background-color: #000000;
 	padding: 0px 100px 0px 100px;
+	margin-bottom: 153px;
 	.main {
 		display: flex;
 		justify-content: space-between;
@@ -146,9 +147,7 @@
 	}
 }
 
-
-
-// Media query just for the images 
+// Media query just for the images
 @media screen and (max-width: 1728px) {
 	.vintageImg {
 		display: none;

@@ -1,8 +1,16 @@
 import styles from "./index.module.scss";
-// import dataForPortfolio from "../DataForWorkPortfolio";
 import PortfolioLinks from "../PortfolioLinks";
 import dataForPortfolio from "../DataForWorkPortfolio";
+import { useState } from "react";
 const PortfolioText = () => {
+
+  // Custom Hook for slicing the array
+	const useDecrementArray = () => {
+		return dataForPortfolio.slice(4);
+	};
+
+  
+	console.log(useDecrementArray());
 	return (
 		<div className={styles.portfolioText}>
 			{dataForPortfolio.map((card) => (
