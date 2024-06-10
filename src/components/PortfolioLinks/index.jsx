@@ -2,7 +2,6 @@ import styles from "./index.module.scss";
 import dataForPortfolioBtn from "../DataForPortfolioBtn";
 
 const PortfolioLinks = () => {
-	// console.log(dataForPortfolioBtn);
 	return (
 		<div className={styles.portfolioLinks}>
 			{dataForPortfolioBtn.map((link) => (
