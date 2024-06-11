@@ -19,34 +19,40 @@ body {
 	width: 100%;
 	height: 120px;
 	color: white;
-	padding: 50px 100px 30px 100px;
-  margin-bottom: 60px;
+	padding: 0px 100px 0px 100px;
+	margin-bottom: 60px;
 
 	.logoMain {
-		width: 4.71%;
-		height: 27px;
+		display: inline-block;
+		& > img {
+			width: 103.71%;
+			height: 27px;
+		}
 	}
 
 	.controlMode {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 13.655%;
+		width: 13.679%;
 		height: 40px;
 		.switchLogo {
-			width: 3.5em;
-			height: 32px;
+			display: inline-block;
+			& > img {
+				width: 100%;
+				height: 32px;
+			}
 		}
 
 		.btnNavbar {
 			display: block;
-			width: 62.7%;
+			width: 63.64%;
 			color: #ffff;
 			height: 40px;
 			background-color: #925ff0;
 			border: none;
 			border-radius: 3px;
-			font-size: 1em;
+			font-size: 0.833332vw;
 		}
 	}
 }
@@ -54,7 +60,7 @@ body {
 // Media query for tablet
 @media only screen and (max-width: 1024px) {
 	.navbar {
-		width: 1024px;
+		width: 100%;
 		.logoMain {
 			width: 8.86%;
 		}
