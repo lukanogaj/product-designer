@@ -9,3 +9,10 @@
 	font-weight: 400;
 	letter-spacing: 0.08rem;
 }
+
+@media only screen and (max-width: 1024px) {
+	.navbarItems {
+		width: 43.69%;
+    font-size: 1.953121vw;
+	}
+}

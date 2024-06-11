@@ -61,12 +61,24 @@ body {
 @media only screen and (max-width: 1024px) {
 	.navbar {
 		width: 100%;
+		background-color: red;
 		.logoMain {
-			width: 8.86%;
+			width: 8.544%;
+		}
+
+		.navbarItems {
+			background-color: green;
 		}
 
 		.controlMode {
 			width: 25.367%;
+		}
+
+		.controlMode {
+			.btnNavbar {
+				font-size: 1.5625vw;
+				// background-color: yellow;
+			}
 		}
 	}
 }

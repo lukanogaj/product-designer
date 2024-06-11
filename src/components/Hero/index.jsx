@@ -9,8 +9,7 @@ const Hero = () => {
 		<div className={styles.hero}>
 			<div className={styles.main}>
 				<div className={styles.headings}>
-					<h1 className={styles.mainHeading}> PRODUCT DESIGNER</h1>
-
+					<h1> PRODUCT DESIGNER</h1>
 					<div className={styles.nameHead}>
 						<h2>CRISTIAN MUÑOZ</h2>
 					</div>
@@ -20,31 +19,45 @@ const Hero = () => {
 					{/* Map for social icons  */}
 
 					{dataForSocialIcons.map((item) => (
-						<div key={item.id} className={styles.socialIcon}>
-							<img className={styles.imgIcons} src={item.image} alt="" />
+						<div
+							key={item.id}
+							className={styles.socialIcon}>
+							<img
+								src={item.image}
+								alt=""
+							/>
 						</div>
 					))}
 				</div>
 				<div className={styles.cvDownload}>
-					<div>
-						<h4>Download Curriculum Vitae</h4>
-					</div>
-					<div className={styles.cvIcon}>
-						<img src={arrowDown} width="20px" height="20px" alt="" />
+					<div className={styles.cvText}>
+						<div className={styles.cvHeading}>
+							<h4>Download Curriculum Vitae</h4>
+						</div>
+						<div className={styles.cvIcon}>
+							<img
+								src={arrowDown}
+								alt=""
+							/>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div className={styles.portal}>
-				<img
-					className={styles.portalImg}
-					src={portal}
-					width="160px"
-					height="160px"
-					alt=""
-				/>
-			</div>
-			<div className={styles.vintageImg}>
-				<img src={vintage} width="694px " height="778px" alt="" />
+
+			<div className={styles.heroProfile}>
+				<div className={styles.portal}>
+					<img
+						className={styles.portalImg}
+						src={portal}
+						alt=""
+					/>
+				</div>
+				<div className={styles.vintageImg}>
+					<img
+						src={vintage}
+						alt=""
+					/>
+				</div>
 			</div>
 		</div>
 	);
