@@ -4,11 +4,15 @@ import dataForPortfolio from "../DataForWorkPortfolio";
 import { useSize } from "../hooks";
 
 const PortfolioText = () => {
-	const windowsize = useSize();
-	const breakpoint = 620;
+	const windowsize = useSize(1024);
+	const breakpoint = 1024;
+	const portfolioToBeSlice = breakpoint
+		? dataForPortfolio.slice(4)
+		: dataForPortfolio;
+
+	// console.log(portfolioToBeSlice);
 
 	console.log(windowsize);
-
 	return (
 		<div className={styles.portfolioText}>
 			{dataForPortfolio.map((card) => (
@@ -33,3 +37,23 @@ const PortfolioText = () => {
 };
 
 export default PortfolioText;
+
+// import { useState, useEffect } from "react";
+
+// export const useSize = () => {
+// 	const [windowSize, setWindowSize] = useState([
+// 		window.innerHeight,
+// 		window.innerWidth,
+// 	]);
+
+// 	useEffect(() => {
+// 		const windowSizeHandler = () => {
+// 			setWindowSize([window.innerWidth, window.innerHeight]);
+// 		};
+// 		window.addEventListener("resize", windowSizeHandler);
+// 		return () => {
+// 			window.removeEventListener("resize", windowSizeHandler);
+// 		};
+// 	}, []);
+// 	return windowSize;
+// };

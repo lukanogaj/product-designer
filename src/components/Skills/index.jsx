@@ -9,20 +9,27 @@ const Skills = () => {
 			</div>
 			<div className={styles.skillsWrapper}>
 				{dataForSkills.map((skill) => (
-					<div key={skill.id} className={styles.skillsContainer}>
+					<div
+						key={skill.id}
+						className={styles.skillsContainer}>
 						<div className={styles.skillEllipse}>
 							<div className={styles.ellipse}>
-								<img src={skill.skillsImage} alt="" />
-							</div>
-							<div className={styles.skillEllipseHeading}>
-								<h1>{skill.ellipseHeading}</h1>
+								<img
+									src={skill.skillsImage}
+									alt=""
+								/>
+								<div className={styles.skillEllipseHeading}>
+									<h1>{skill.ellipseHeading}</h1>
+								</div>
 							</div>
 						</div>
 						<div className={styles.skillText}>
 							<div className={styles.skillTextHeading}>
 								<h1>{skill.heading}</h1>
 							</div>
-							<div className={styles.skillTextParagraph}>{skill.paragraph}</div>
+							<div className={styles.skillTextParagraph}>
+								<p>{skill.paragraph}</p>
+							</div>
 						</div>
 					</div>
 				))}
