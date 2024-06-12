@@ -10,7 +10,7 @@ const Navbar = () => {
 	};
 	return (
 		<div className={styles.navbar}>
-			<div className={styles.logoMain}>
+			<div className={styles.logo}>
 				<img
 					src={logo}
 					alt=""

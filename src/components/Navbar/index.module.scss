@@ -1,14 +1,14 @@
-body {
-	--bkg-color: #000000;
-}
+// body {
+// 	--bkg-color: #000000;
+// }
 
-body.light-theme {
-	--bkg-color: #ffffff;
-}
+// body.light-theme {
+// 	--bkg-color: #ffffff;
+// }
 
-body {
-	background: var(--bkg-color);
-}
+// body {
+// 	background: var(--bkg-color);
+// }
 
 .navbar {
 	display: flex;
@@ -19,45 +19,36 @@ body {
 	width: 100%;
 	height: 120px;
 	color: white;
-	padding: 0px 100px 0px 100px;
 	margin-bottom: 60px;
-
-	.logoMain {
-		display: inline-block;
+	.logo {
+		width: 15%;
 		& > img {
-			width: 103.71%;
-			height: 27px;
+			display: inline-block;
 		}
 	}
 
 	.controlMode {
 		display: flex;
-		justify-content: space-between;
+		padding-left: 100px;
 		align-items: center;
-		width: 13.679%;
-		height: 40px;
+		width: 25%;
 		.switchLogo {
 			display: inline-block;
-      width: 26.8%;
 			& > img {
 				width: 100%;
-				height: 32px;
 			}
 		}
 
 		.btnNavbar {
 			display: block;
-			width: 63.64%;
+			width: 43%;
+			height: 40px;
 			color: #ffff;
-			height: 100%;
 			background-color: #925ff0;
 			border: none;
 			border-radius: 3px;
 			font-size: 0.833332vw;
-			& > button {
-				width: 100%;
-				height: 100%;
-			}
+			margin-left: 10px;
 		}
 	}
 }
@@ -66,7 +57,6 @@ body {
 @media only screen and (max-width: 1024px) {
 	.navbar {
 		width: 100%;
-		background-color: red;
 		.logoMain {
 			width: 8.544%;
 		}

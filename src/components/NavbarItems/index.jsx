@@ -2,13 +2,12 @@ import styles from "./index.module.scss";
 
 const NavbarItems = () => {
 	return (
-			<div className={styles.navbarItems}>
-				<div>Home</div>
-				<div>Portfolio</div>
-				<div>Skills</div>
-				<div>About Me</div>
-			</div>
-
+		<ul className={styles.navbarItems}>
+			<li>Home</li>
+			<li>Portfolio</li>
+			<li>Skills</li>
+			<li>About Me</li>
+		</ul>
 	);
 };
 

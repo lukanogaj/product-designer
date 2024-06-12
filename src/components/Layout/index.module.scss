@@ -28,11 +28,13 @@ body {
 	display: flex;
 	font-family: "Anton", sans-serif;
 	flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 	margin: auto;
 	width: 90.709%;
+  height: 100%;
+	padding-left: 100px;
 }
 
 @media screen and (max-width: 1024px) {

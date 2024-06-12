@@ -2,14 +2,14 @@
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
-	height: 778px;
+	height: 100%;
 	padding: 0px 100px 0px 100px;
 	margin-bottom: 153px;
 	.main {
 		display: flex;
 		justify-content: space-between;
 		flex-direction: column;
-		width: 660px;
+		width: 43.775%;
 		height: 695px;
 
 		// Two main headers
@@ -42,7 +42,6 @@
 					background: linear-gradient(to right, #fa709a, #fee140);
 					background-clip: text;
 					-webkit-text-fill-color: transparent;
-					background-color: green;
 				}
 			}
 		}
@@ -117,15 +116,16 @@
 .heroProfile {
 	display: flex;
 	width: 57.57%;
+	height: 100%;
 	justify-content: space-between;
 	.portal {
 		display: inline-block;
 		width: 23.15%;
-		height: 160px;
+		height: 20.567%;
 		margin-right: 19px;
 		& > img {
 			width: 100%;
-			height: 160px;
+			height: 100%;
 		}
 	}
 
@@ -133,7 +133,7 @@
 	.vintageImg {
 		width: 100.41%;
 		& > img {
-      width: 100%;
+			width: 100%;
 			display: inline-block;
 		}
 	}
@@ -142,53 +142,16 @@
 // Media query for tablet
 @media screen and (max-width: 1024px) {
 	.hero {
-		align-items: center;
-		align-content: center;
-		align-items: center;
-		text-align: center;
-		justify-content: center;
-		width: 100%;
-		height: 695px;
-		margin-top: 60px;
-		.portal {
-			display: none;
-		}
-		.vintageImg {
-			display: none;
-		}
-
-		.main {
-			width: 80.1%;
-			height: 695px;
-			align-items: center;
-			.headings {
-				text-align: center;
-				width: 100%;
-
-				.mainHeading {
-					white-space: normal;
-					font-size: 12em;
-					text-align: left;
-				}
-
-				.nameHead {
-					font-size: 2.54em;
-				}
-			}
-
-			.socialLinks {
-				width: 100%;
-			}
-		}
+    width: 100%;
 	}
 }
 
-// Media query just for the images
-// @media screen and (max-width: 1728px) {
-// 	.vintageImg {
-// 		display: none;
-// 	}
-// }
+//Media query just for the images
+@media screen and (max-width: 1728px) {
+	.vintageImg {
+		display: none;
+	}
+}
 
 // // Media query mobile
 // @media screen and (max-width: 430px) {
