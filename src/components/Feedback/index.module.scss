@@ -1,7 +1,7 @@
 .feedback {
 	display: flex;
 	justify-content: center;
-	width: 1731px;
+	width: 100%;
 	height: 800px;
 	background-image: url(../Assests/unsplash.png);
 	background-repeat: no-repeat;
@@ -12,27 +12,27 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		width: 1094px;
+		width: 63.311%;
 		height: 506px;
 		margin-top: 147px;
-    
+
 		.feedbackHeading {
-			width: 420px;
+			width: 30%;
 			height: 50px;
 			& > h1 {
 				color: #ffffff;
-				font-size: 48px;
+				font-size: 2.5vw;
 				white-space: nowrap;
 				font-weight: 600;
 			}
 		}
 
 		.feedbackParagraph {
-			width: 1094px;
+			width: 100%;
 			height: 250px;
 			margin-top: 60px;
 			& > p {
-				font-size: 48px;
+				font-size: 2.5vw;
 				color: #ffffff;
 				font-style: italic;
 				font-weight: 700;
@@ -42,7 +42,11 @@
 		}
 
 		.feedbackImage {
+			display: inline-block;
 			margin-top: 130px;
+			& > img {
+				width: 100%;
+			}
 		}
 	}
 }

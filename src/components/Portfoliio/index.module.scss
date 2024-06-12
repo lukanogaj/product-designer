@@ -12,12 +12,11 @@
 
 	.portfolioHeading {
 		display: inline-block;
-		font-size: 4em;
+		font-size: 3.333335vw;
 		font-weight: 400;
 		color: #ffffff;
 
 		& > h1 {
-			font-size: 4em;
 			font-weight: 400;
 			color: #ffffff;
 		}
@@ -36,6 +35,5 @@
 	.portfolio {
 		width: 100%;
 		height: 100%;
-		background-color: red;
 	}
 }
