@@ -23,7 +23,6 @@
 			width: 43.154%;
 			line-height: 1;
 			margin-top: 76px;
-			// font-size: 1.875vw;
 			& > p {
 				line-height: 1;
 				letter-spacing: 1rem;
@@ -32,13 +31,12 @@
 		}
 		.aboutMeImage {
 			display: flex;
-			width: 100%;
-			height: 100%;
-      background-color: red;
+			width: 50%;
+			background-color: red;
 			& > img {
 				display: block;
-				width: 69.301%;
-				height: 91.38%;
+				width: 100%;
+				height: 100%;
 				display: block;
 			}
 		}
@@ -50,17 +48,21 @@
 		align-items: center;
 		justify-content: space-between;
 		width: 100%;
+		.aboutMeImage {
+			width: 50%;
+			& > img {
+				width: 100%;
+			}
+		}
 		.aboutMeParagraph {
 			width: 43.1994%;
 			height: 324px;
-			// background-color: red;
+      line-height: 1;
 			& > p {
 				display: inline-block;
-				font-size: 36px;
 				font-weight: 700;
 				color: #ffffff;
 				letter-spacing: -0.13rem;
-				line-height: 2.5rem;
 			}
 		}
 	}
