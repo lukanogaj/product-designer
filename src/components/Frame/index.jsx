@@ -6,6 +6,12 @@ const Frame = () => {
 	return (
 		<div className={styles.frameContainer}>
 			<div className={styles.frameWrapper}>
+				<div className={styles.frameWaves}>
+					<img
+						src={frameFooter}
+						alt=""
+					/>
+				</div>
 				<div className={styles.vintageImage}>
 					<img
 						src={smallVintage}

@@ -2,23 +2,25 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 1731px;
+	width: 100%;
 	height: 90px;
-
 	padding: 0px 100px 0px 100px;
 
 	.footerWrapper {
 		display: flex;
 		justify-content: space-between;
-		width: 1528px;
+		width: 100%;
 		align-items: center;
 		height: 100%;
-		// background-color: red;
 	}
 
 	.logoMain {
-		width: 73px;
+		width: 10.734%;
 		height: 27px;
+		& > {
+			width: 100%;
+			height: 100%;
+		}
 		// margin-left: 100px;
 	}
 }
