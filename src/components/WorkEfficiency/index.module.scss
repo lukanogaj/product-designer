@@ -2,14 +2,14 @@
 	display: flex;
 	justify-content: space-around;
 	width: 88.716%;
-	height: 392px;
+	height: 372px;
 	border: solid #646464 1px;
 	border-radius: 29px;
 	background-color: #000;
 	align-items: center;
 	font-family: "Anton", sans-serif;
 	align-items: center;
-	margin: 153px 100px 0px 100px;
+	margin: 150px 100px 0px 100px;
 
 	.statsIcon {
 		width: 5.226%;
@@ -43,11 +43,12 @@
 	.headStats {
 		display: block;
 		font-family: "Anton", sans-serif;
-
+		height: 115px;
+		margin-bottom: 50px;
 		& > h1 {
 			display: block;
 			font-family: "Anton", sans-serif;
-			font-size: 8em;
+			font-size: 6.66665vw;
 			font-weight: 400;
 			color: #c8fec7;
 		}
@@ -55,8 +56,11 @@
 
 	.statsParagraph {
 		display: block;
+		height: 72px;
 		& > p {
 			display: block;
+			color: #c8fec7;
+			font-size: 1.875vw;
 		}
 	}
 }
