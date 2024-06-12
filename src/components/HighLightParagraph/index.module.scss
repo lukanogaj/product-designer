@@ -2,34 +2,48 @@
 	display: inline;
 	justify-content: space-between;
 	font-weight: 700;
-	width: 670px;
+	width: 60%;
 	height: 400px;
 	letter-spacing: 0.04rem;
 	white-space: normal;
+	font-weight: 700;
 
-	.highlitedParagraph {
+	.highlitedParagraph,
+	p {
 		display: inline;
 		width: 670px;
-		font-size: 36px;
+		font-size: 1.875vw;
 		color: #ffffff;
-		background: linear-gradient(to right, #fa709a, #fee140);
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
+		// background-color: red;
+		// background: linear-gradient(to right, #fa709a, #fee140);
+		// background-clip: text;
+		// -webkit-text-fill-color: transparent;
+		& > span {
+			font-size: 1vw;
+			// background-color: #fff;
+			color: #fff;
+			// background: linear-gradient(to right, #fa709a, #fee140);
+			// background-clip: text;
+			// -webkit-text-fill-color: transparent;
+		}
 	}
 
-	.paragraphDefault {
+	.paragraphDefault,
+	p {
 		display: inline;
-		width: 670px;
+		width: 100%;
 		flex-wrap: wrap;
-		font-size: 36px;
 		color: #ffffff;
+		& > span {
+			font-size: 1.875vw;
+		}
 	}
 
 	// Backgrounds colors for highligted spans
 	.redClass {
 		display: inline;
-		width: 670px;
-		font-size: 36px;
+		width: 100%;
+		font-size: 1.875vw;
 		color: #ffffff;
 		background: linear-gradient(to right, #fa709a, #fee140);
 		background-clip: text;
@@ -39,8 +53,8 @@
 	// Second paragraph with two diffrent linears set
 	.greenClass {
 		display: inline;
-		width: 670px;
-		font-size: 36px;
+		width: 100%;
+		font-size: 1.875vw;
 		color: #ffffff;
 		background: linear-gradient(to left, #84fab0, #8fd3f4);
 		background-clip: text;
@@ -50,8 +64,8 @@
 	// Third Paragraph with two diffrent linear
 	.blueClass {
 		display: inline;
-		width: 670px;
-		font-size: 36px;
+		width: 100%;
+		font-size: 1.875vw;
 		color: #ffffff;
 		background: linear-gradient(90deg, #e0c3fc, #8ec5fc);
 		background-clip: text;
@@ -60,8 +74,8 @@
 
 	.rainbowClass {
 		display: inline;
-		width: 670px;
-		font-size: 36px;
+		width: 100%;
+		font-size: 1.875vw;
 		color: #ffffff;
 		background: linear-gradient(
 			89.9deg,
