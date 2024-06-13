@@ -14,7 +14,7 @@ function App() {
 	// const windowSize = useRef([window.innerWidth, window.innerHeight]);
 	return (
 		<Layout>
-			{/* <Hero /> */}
+			<Hero />
 			{/* <WorkEfficiency /> */}
 			{/* <Portfolio /> */}
 			{/* <Skills /> */}

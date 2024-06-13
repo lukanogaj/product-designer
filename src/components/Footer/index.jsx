@@ -1,5 +1,4 @@
 import styles from "./index.module.scss";
-import NavbarItems from "../NavbarItems";
 import logo from "../Assests/Icons/logo.png";
 
 const Footer = () => {
@@ -12,8 +11,6 @@ const Footer = () => {
 						alt=""
 					/>
 				</div>
-
-				<NavbarItems />
 			</div>
 		</div>
 	);
