@@ -1,6 +1,5 @@
 import "./App.css";
 import Layout from "./components/Layout";
-import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import WorkEfficiency from "./components/WorkEfficiency";
 import Portfolio from "./components/Portfoliio";
@@ -15,15 +14,14 @@ function App() {
 	// const windowSize = useRef([window.innerWidth, window.innerHeight]);
 	return (
 		<Layout>
-			<Navbar />
-			<Hero />
-			<WorkEfficiency />
-			<Portfolio />
-			<Skills />
-			<Feedback />
-			<AboutMe />
-			<Frame />
-			<Footer />
+			{/* <Hero /> */}
+			{/* <WorkEfficiency /> */}
+			{/* <Portfolio /> */}
+			{/* <Skills /> */}
+			{/* <Feedback /> */}
+			{/* <AboutMe /> */}
+			{/* <Frame /> */}
+			{/* <Footer /> */}
 		</Layout>
 	);
 }

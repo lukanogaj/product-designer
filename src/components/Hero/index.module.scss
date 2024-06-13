@@ -3,26 +3,20 @@
 	justify-content: space-between;
 	width: 100%;
 	height: 100%;
-	padding: 0px 100px 0px 100px;
+	// padding: 0px 100px 0px 100px;
 	margin-bottom: 153px;
 	.main {
 		display: flex;
 		justify-content: space-between;
-		flex-direction: column;
-		width: 43.775%;
-		height: 695px;
-
+		width: 50%;
+		background-color: red;
 		// Two main headers
 		.headings {
 			display: flex;
 			flex-direction: column;
-			width: 100%;
-			height: 481px;
 			font-family: "Anton", sans-serif;
 			margin-bottom: 70px;
 			& > h1 {
-				width: 100%;
-				height: 360px;
 				font-size: 10.3vw;
 				color: #fff;
 				font-weight: 400;
@@ -31,8 +25,6 @@
 			}
 			.nameHead {
 				display: inline-block;
-				width: 100%;
-				height: 103px;
 				font-size: 3.73vw;
 				font-weight: 400;
 				line-height: 1.4;
@@ -48,13 +40,12 @@
 
 		// Social icons below the header
 		.socialLinks {
+      width: 100%;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			width: 100%;
-			height: 52px;
 			.socialIcon {
-				width: 6.365%;
+        width: 100%;
 				height: 42px;
 				text-align: center;
 				align-content: center;
@@ -118,31 +109,22 @@
 	width: 57.57%;
 	height: 100%;
 	justify-content: space-between;
-	.portal {
-		display: inline-block;
-		width: 23.15%;
-		height: 20.567%;
-		margin-right: 19px;
-		& > img {
-			width: 100%;
-			height: 100%;
-		}
-	}
+
 
 	// The huge image with the strange face
-	.vintageImg {
-		width: 100.41%;
-		& > img {
-			width: 100%;
-			display: inline-block;
-		}
-	}
+	// .vintageImg {
+	// 	width: 100.41%;
+	// 	& > img {
+	// 		width: 100%;
+	// 		display: inline-block;
+	// 	}
+	// }
 }
 
 // Media query for tablet
 @media screen and (max-width: 1024px) {
 	.hero {
-    width: 100%;
+		width: 100%;
 	}
 }
 

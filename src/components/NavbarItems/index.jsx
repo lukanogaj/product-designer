@@ -2,7 +2,7 @@ import styles from "./index.module.scss";
 
 const NavbarItems = () => {
 	return (
-		<ul className={styles.navbarItems}>
+		<ul>
 			<li>Home</li>
 			<li>Portfolio</li>
 			<li>Skills</li>

@@ -1,62 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-
-*,
-*::before,
-*::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+.layoutContainer {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background-color: blue;
 }
 
-body {
-	--bkg-color: #000000;
+.layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1728px;
+  min-height: 100vh;
+  background-color: lightgray;
 }
-
-body.light-theme {
-	--bkg-color: #ffffff;
-}
-
-body {
-	background: var(--bkg-color);
-}
-.container {
-	display: flex;
-	font-family: "Anton", sans-serif;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-	margin: auto;
-	width: 90.709%;
-  height: 100%;
-	padding-left: 100px;
-}
-
-@media screen and (max-width: 1024px) {
-	.container {
-		width: 100%;
-	}
-}
-
-// @media screen and (max-width: 1366px) {
-// 	.container {
-// 		background-color: yellow;
-// 	}
-// }
-
-// }
-// @media screen and (max-width: 768px) {
-// 	.container {
-// 		background-color: blue;
-// 	}
-// }
-// @media screen and (max-width: 480px) {
-// 	.container {
-// 		background-color: purple;
-// 	}
-// }

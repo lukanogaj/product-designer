@@ -1,23 +1,31 @@
 import styles from "./index.module.scss";
-import useLocalStorage from "use-local-storage";
 import logo from "../Assests/Icons/logo.png";
 import switchLogo from "../Assests/Icons/switchmode.png";
-import NavbarItems from "../NavbarItems";
 
 const Navbar = () => {
 	const handleDarkMode = () => {
 		console.log("clicked");
 	};
 	return (
-		<div className={styles.navbar}>
+		<div className={styles.container}>
+			{/* Right hand side logo */}
 			<div className={styles.logo}>
 				<img
 					src={logo}
 					alt=""
 				/>
 			</div>
-			<NavbarItems />
-			<div className={styles.controlMode}>
+			{/* Middle menu with items */}
+			<div className={styles.menu}>
+				<ul>
+					<li>Home</li>
+					<li>Portfolio</li>
+					<li>Skills</li>
+					<li>About Me</li>
+				</ul>
+			</div>
+			{/* Controls for dark-light mode and contact button */}
+			<div className={styles.controls}>
 				<div
 					className={styles.switchLogo}
 					onClick={() => handleDarkMode()}>
@@ -26,7 +34,7 @@ const Navbar = () => {
 						alt=""
 					/>
 				</div>
-				<button className={styles.btnNavbar}>
+				<button>
 					{/* // onClick={() => handleDarkMode()} */}
 					Contact Me
 				</button>
