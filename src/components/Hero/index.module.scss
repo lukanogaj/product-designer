@@ -4,49 +4,66 @@
 	height: calc(100vh - 80px);
 	max-height: 800px;
 	margin-bottom: 153px;
-  background-color: #000;
+	background-color: #000;
 	// The box with the headings social icons and cv downlad button
-	.text {
+	.main {
 		display: flex;
-		justify-content: space-between;
 		width: 50%;
-		// Two headings
-		.heads {
+		.text {
 			display: flex;
 			flex-direction: column;
-			width: 100%;
-			font-family: "Anton", sans-serif;
-			color: #fff;
-			& > h1 {
-				font-size: 11.5rem;
-				line-height: 0.98;
-			}
+			justify-content: space-between;
 
-			& > h2 {
-				font-size: 6.5rem;
-				background: linear-gradient(to right, #fa709a, #fee140);
-				background-clip: text;
-				-webkit-text-fill-color: transparent;
+			// Two headings
+			.heads {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				font-family: "Anton", sans-serif;
+				color: #fff;
+				& > h1 {
+					font-size: 11.5rem;
+					line-height: 0.98;
+					@media screen and (max-width: 1024px) {
+						font-size: 11.5rem;
+						text-align: center;
+					}
+				}
+
+				& > h2 {
+					font-size: 6.5rem;
+					background: linear-gradient(to right, #fa709a, #fee140);
+					background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
+				@media screen and (max-width: 1024px) {
+					font-size: 2rem;
+				}
+			}
+			.social {
+				display: flex;
+				// flex-direction: column;
 			}
 		}
 	}
 	.image {
 		width: 50%;
-		background-color: grey;
-		// justify-content: flex-end;
+		height: 100%;
+		text-align: right;
+		@media screen and (max-width: 1024px) {
+			display: none;
+		}
 	}
 }
 
 // Middle star
 .portal {
-	width: 160px;
-	height: 160px;
+	width: 180px;
+	height: 180px;
 	@media screen and (max-width: 1727px) {
 		display: none;
 	}
 	& > img {
 		width: 100%;
-		background-color: green;
 	}
 }
-
