@@ -1,15 +1,15 @@
 .layoutContainer {
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-  background-color: blue;
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	background-color: blue;
 }
 
 .layout {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 1728px;
-  min-height: 100vh;
-  background-color: lightgray;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 1728px;
+	min-height: 100vh;
+	background-color: lightgray;
 }

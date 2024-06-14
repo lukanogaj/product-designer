@@ -14,13 +14,7 @@ const Hero = () => {
 						<h1> PRODUCT DESIGNER</h1>
 						<h2>CRISTIAN MUÑOZ</h2>
 					</div>
-					{/* <div className={styles.portal}>
-						<img
-							className={styles.portalImg}
-							src={portal}
-							alt=""
-						/>
-					</div> */}
+		{/* Box with social icons  */}
 					<div className={styles.social}>
 						{dataForSocialIcons.map((item) => (
 							<div
@@ -32,6 +26,17 @@ const Hero = () => {
 								/>
 							</div>
 						))}
+					</div>
+					<div className={styles.cvDownload}>
+						<div className={styles.cvText}>
+							<h4>Download Curriculum Vitae</h4>
+							<div className={styles.cvIcon}>
+								<img
+									src={arrowDown}
+									alt=""
+								/>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div className={styles.portal}>
@@ -58,32 +63,7 @@ export default Hero;
 {
 	/* Component with the headings , social links, cv download button */
 }
-{
-	/* <div className={styles.heads}>
-					<div className={styles.mainHead}>
-						<h1> PRODUCT DESIGNER</h1>
-					</div>
-					<div className={styles.nameHead}>
-						<h2>CRISTIAN MUÑOZ</h2>
-					</div>
-					<div className={styles.socialLinks}> */
-}
-{
-	/* Map for social icons  */
-}
-
-{
-	/* {dataForSocialIcons.map((item) => (
-							<div
-								key={item.id}
-								className={styles.socialIcon}>
-								<img
-									src={item.image}
-									alt=""
-								/>
-							</div>
-						))}
-					</div>
+/*
 					<div className={styles.cvDownload}>
 						<div className={styles.cvText}>
 							<div className={styles.cvHeading}>
@@ -98,11 +78,5 @@ export default Hero;
 						</div>
 					</div>
 				</div>
-				<div className={styles.portal}>
-					<img
-						className={styles.portalImg}
-						src={portal}
-						alt=""
-					/>
+
 				</div> */
-}
