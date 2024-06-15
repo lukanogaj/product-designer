@@ -14,7 +14,7 @@ const Hero = () => {
 						<h1> PRODUCT DESIGNER</h1>
 						<h2>CRISTIAN MUÑOZ</h2>
 					</div>
-		{/* Box with social icons  */}
+					{/* Box with social icons  */}
 					<div className={styles.social}>
 						{dataForSocialIcons.map((item) => (
 							<div
@@ -29,7 +29,9 @@ const Hero = () => {
 					</div>
 					<div className={styles.cvDownload}>
 						<div className={styles.cvText}>
-							<h4>Download Curriculum Vitae</h4>
+							<div className={styles.cvHead}>
+								<h4>Download Curriculum Vitae</h4>
+							</div>
 							<div className={styles.cvIcon}>
 								<img
 									src={arrowDown}
