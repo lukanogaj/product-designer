@@ -15,7 +15,7 @@ function App() {
 	return (
 		<Layout>
 			<Hero />
-			{/* <WorkEfficiency /> */}
+			<WorkEfficiency />
 			{/* <Portfolio /> */}
 			{/* <Skills /> */}
 			{/* <Feedback /> */}
