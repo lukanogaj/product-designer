@@ -4,18 +4,20 @@ import dataForPortfolio from "../DataForWorkPortfolio";
 import { useSize } from "../hooks";
 
 const PortfolioText = () => {
-	const windowsize = useSize(1024);
-	const breakpoint = 1024;
-	const portfolioToBeSlice = breakpoint
-		? dataForPortfolio.slice(4)
-		: dataForPortfolio;
+	const windowsize = useSize();
+	const windowstring = toString(windowsize);
+	console.log(windowstring);
+	// console.log(typeof windowsize[0]);
 
-	// console.log(portfolioToBeSlice);
+	const slicedArray =
+		windowsize <= "1024" ? dataForPortfolio.slice(0, 4) : dataForPortfolio;
 
-	console.log(windowsize);
+	console.log(slicedArray);
+
+	// console.log(windowsize);
 	return (
 		<div className={styles.portfolioText}>
-			{dataForPortfolio.map((card) => (
+			{slicedArray.map((card) => (
 				<div
 					key={card.id}
 					className={styles.portfolioTextItem}>
