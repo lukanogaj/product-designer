@@ -5,16 +5,13 @@ import { useSize } from "../hooks";
 
 const PortfolioText = () => {
 	const windowsize = useSize();
-	const windowstring = toString(windowsize);
-	console.log(windowstring);
-	// console.log(typeof windowsize[0]);
 
 	const slicedArray =
-		windowsize <= "1024" ? dataForPortfolio.slice(0, 4) : dataForPortfolio;
+		windowsize[0] <= 1024 ? dataForPortfolio.slice(0, 4) : dataForPortfolio;
 
 	console.log(slicedArray);
 
-	// console.log(windowsize);
+	console.log(windowsize);
 	return (
 		<div className={styles.portfolioText}>
 			{slicedArray.map((card) => (
