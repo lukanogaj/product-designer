@@ -9,10 +9,16 @@
 	background-color: #000000;
 	font-family: "Anton", sans-serif;
 	// position: relative;
+	@media screen and (max-width: 1024px) {
+		width: 100%;
+		height: 100%;
+		align-items: center;
+		align-content: center;
+	}
 
 	.portfolioHeading {
 		display: inline-block;
-		font-size: 3.333335vw;
+		font-size: 4rem;
 		font-weight: 400;
 		color: #ffffff;
 
@@ -25,15 +31,7 @@
 	.portfolioWrapper {
 		display: flex;
 		flex-direction: column;
-		width: 88.542%;
+		width: 90%;
 		height: 868px;
-	}
-}
-
-// Media query for tablet
-@media screen and (max-width: 1024px) {
-	.portfolio {
-		width: 100%;
-		height: 100%;
 	}
 }

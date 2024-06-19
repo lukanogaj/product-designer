@@ -5,16 +5,26 @@
 	height: 868px;
 	flex-wrap: wrap;
 
+	@media screen and (max-width: 1024px) {
+		width: 100%;
+		flex-wrap: wrap;
+	}
+
 	.portfolioTextItem {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		width: 23.661%;
+		width: 24%;
 		height: 419px;
 		background-color: #0b0b0b;
 		border: solid 1px #737373;
 		border-radius: 10px;
+		@media screen and (max-width: 1024px) {
+			width: 47%;
+			flex-wrap: wrap;
+			margin: 0;
+		}
 
 		.cardFrame {
 			// width: 100%;
@@ -22,12 +32,11 @@
 			text-align: center;
 			align-items: center;
 			align-content: center;
-			 & > img {
+			& > img {
 				display: inline-block;
 				width: 100%;
 			}
 		}
-
 
 		.portfolioTextHeading {
 			display: flex;
@@ -59,18 +68,12 @@
 	}
 }
 
-
-
-
 @media screen and (max-width: 1024px) {
-
 }
-
-
 
 // // Media query mobile
 // @media screen and (max-width: 430px) {
 // 	.navbar {
 // 		background-color: purple;
 // 	}
-// 
+//

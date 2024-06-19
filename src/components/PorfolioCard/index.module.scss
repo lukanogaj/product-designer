@@ -6,9 +6,7 @@
 	height: 868px;
 	flex-wrap: wrap;
 	background-color: #000000;
-}
-
-
-@media screen and (max-width: 1024px) {
-
+	@media screen and (max-width: 1024px) {
+		width: 100%;
+	}
 }
