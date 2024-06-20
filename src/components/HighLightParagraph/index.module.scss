@@ -10,36 +10,18 @@
 	font-size: 2.25rem;
 	line-height: 2rem;
 	letter-spacing: 0.04rem;
-  background-color: green;
-
-	.highlitedParagraph {
-		width: 100%;
-    background-color: red;
-		& > p {
-			display: inline;
-			width: 670px;
-			// font-size: 2.25rem;
-			// color: #ffffff;
-			// background: linear-gradient(to right, #fa709a, #fee140);
-			// background-clip: text;
-			// -webkit-text-fill-color: transparent;
-			// & > span {
-			// 	font-size: 2.25rem;
-			// 	// background-color: #fff;
-			// 	color: #fff;
-			// 	background-color: blue;
-
-			// 	// background: linear-gradient(to right, #fa709a, #fee140);
-			// 	// background-clip: text;
-			// 	// -webkit-text-fill-color: transparent;
-			// }
-		}
-	}
 
 	.paragraphDefault {
 		width: 100%;
-		// background-color: red;
 		font-size: 2.25rem;
+		@media screen and (max-width: 1600px) {
+			background-color: blue;
+			font-size: 1.7rem;
+		}
+    @media screen and (max-width: 1400px) {
+			background-color: green;
+			font-size: 1.75rem;
+		}
 		& > p {
 			display: inline;
 			width: 100%;

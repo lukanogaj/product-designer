@@ -13,25 +13,21 @@
 	.aboutMeContainer {
 		display: flex;
 		flex-direction: column;
-		width: 89%;
-	}
-
-	.aboutMeDetails {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		width: 100%;
-
-		.aboutMeParagraph {
-			width: 47%;
-			margin-top: 76px;
-		}
-		.aboutMeImage {
+		margin: 0;
+		padding: 0;
+		width: 92%;
+		.aboutMeDetails {
 			display: flex;
-			width: 50%;
-			& > img {
-				width: 100%;
-				display: block;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+
+			.aboutMeParagraph {
+				width: 50%;
+				margin-top: 76px;
+			}
+			.aboutMeImage {
+				width: 50%;
 			}
 		}
 	}
@@ -39,18 +35,21 @@
 	.reversed {
 		display: flex;
 		flex-direction: row-reverse;
-		align-items: center;
-		justify-content: space-between;
+		// align-items: center;
+		align-content: center;
+		justify-content: space-evenly;
 		width: 100%;
 		.aboutMeImage {
 			width: 50%;
-			& > img {
-				width: 100%;
-			}
+			// z-index: inherit;
+			// max-width: 100%;
 		}
 		.aboutMeParagraph {
-			width: 47%;
-			line-height: 1;
+			width: 50%;
+			// align-items: center;
+			// text-align: center;
+			// line-height: 1;
+			// background-color: yellow;
 		}
 	}
 }
