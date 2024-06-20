@@ -4,13 +4,17 @@
 	width: 100%;
 	height: 774px;
 	font-family: "Lato", sans-serif;
-	padding: 0px 100px 0px 100px;
+	padding: 0px 80px 0px 80px;
 	background-color: #000;
+
+	@media screen and (max-width: 1024px) {
+		width: 100%;
+	}
 	.skillsHeading {
 		display: inline-block;
 		& > h1 {
 			display: inline-block;
-			font-size: 3.334vw;
+			font-size: 4rem;
 			font-weight: 400;
 			color: #ffffff;
 		}
@@ -25,20 +29,29 @@
 		background-color: #000000;
 		align-items: center;
 
+		// @media  screen and (max-width:1024px) {
+		//   width: ;
+		// }
+
 		.skillsContainer {
 			display: flex;
 			background-color: #010101;
 			align-items: center;
-			width: 48.921%;
+			width: 49%;
 			height: 320px;
 			border: solid 1px #737373;
 			border-radius: 10px;
 
+			@media screen and (max-width: 1024px) {
+				width: 100%;
+				margin: 20px;
+				// background-color: green;
+			}
 			.skillEllipse {
 				display: flex;
 				flex-direction: column;
 				position: relative;
-				width: 29.511%;
+				width: 29%;
 				height: 220px;
 				margin-left: 40px;
 
@@ -53,15 +66,30 @@
 
 				.skillEllipseHeading {
 					position: absolute;
-					width: 34.091%;
-					height: 16.364%;
 					top: 41%;
 					right: 10%;
 					left: 35%;
+					@media screen and (max-width:1400px) {
+            position:absolute;
+            right: 3%;
+            left: 33%;
+            top:38%;
+					}
+          @media screen and (max-width:1024px) {
+            position:absolute;
+            right: 3%;
+            left: 39%;
+            top:40%;
+					}
 					& > h1 {
-						width: 100%;
+            @media screen and (max-width:1400px) {
+            font-size: 1.9rem;
+            }
+            @media screen and (max-width:1024px) {
+              font-size: 2.25rem;
+              }
 						font-family: "Lato", sans-serif;
-						font-size: 1.875vw;
+						font-size: 2.25rem;
 						color: #ffffff;
 					}
 				}
@@ -72,21 +100,20 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-			width: 57.143%;
+			width: 57%;
 			height: 136px;
 			margin-left: 20px;
 
 			.skillTextHeading {
-				width: 97.654%;
+				width: 98%;
 				height: 36px;
 				margin-bottom: 20px;
 				& > h1 {
 					font-family: "Montserrat", sans-serif;
-					font-size: 1.874998vw;
+					font-size: 2.25rem;
 					color: #ffff;
 					font-weight: bolder;
 					white-space: nowrap;
-					letter-spacing: -0.13rem;
 				}
 			}
 
@@ -96,18 +123,17 @@
 				height: 80xp;
 
 				& > p {
+          @media screen and (max-width:1400px) {
+   font-size: 1rem;
+					}
+          @media screen and (max-width:1024px) {
+            font-size: 1.25rem;
+                   }
 					color: #ffffff;
 					letter-spacing: -0.05rem;
-					font-size: 1.041665vw;
+					font-size: 1.25rem;
 				}
 			}
 		}
-	}
-}
-
-@media screen and (max-width: 1024px) {
-	.skills {
-		width: 100%;
-		background-color: green;
 	}
 }
