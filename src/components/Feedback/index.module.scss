@@ -2,42 +2,47 @@
 	display: flex;
 	justify-content: center;
 	width: 100%;
-	height: 800px;
 	background-image: url(../Assests/unsplash.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-family: "Poppins", sans-serif;
 
+
+
 	.feedbackText {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		width: 63.311%;
-		height: 506px;
+		width: 80%;
 		margin-top: 147px;
 
 		.feedbackHeading {
-			width: 30%;
-			height: 50px;
+			width: 100%;
+			text-align: center;
 			& > h1 {
 				color: #ffffff;
-				font-size: 2.5w;
+				font-size: 3rem;
 				white-space: nowrap;
 				font-weight: 600;
+        @media screen and (max-width:1024px){
+          font-size: 2.5rem;
+        }
 			}
 		}
 
 		.feedbackParagraph {
 			width: 100%;
-			height: 250px;
 			margin-top: 60px;
 			& > p {
-				font-size: 2.5vw;
+				font-size: 3rem;
 				color: #ffffff;
 				font-style: italic;
 				font-weight: 700;
-				letter-spacing: -0.15rem;
+				letter-spacing: 0.3rem;
 				line-height: 4rem;
+        @media screen and (max-width:1024px){
+          font-size: 2.5rem;
+        }
 			}
 		}
 

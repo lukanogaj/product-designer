@@ -2,21 +2,27 @@
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	height: 774px;
+	// height: 774px;
 	font-family: "Lato", sans-serif;
 	padding: 0px 80px 0px 80px;
 	background-color: #000;
-
+	margin-bottom: 200px;
 	@media screen and (max-width: 1024px) {
 		width: 100%;
 	}
 	.skillsHeading {
 		display: inline-block;
+    width: 100%;
 		& > h1 {
 			display: inline-block;
 			font-size: 4rem;
 			font-weight: 400;
 			color: #ffffff;
+      @media screen and (max-width: 1024px) {
+        width: 100%;
+        padding-left: 20px;;
+      }
+      
 		}
 	}
 
@@ -24,14 +30,11 @@
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
-		height: 660px;
 		flex-wrap: wrap;
 		background-color: #000000;
 		align-items: center;
 
-		// @media  screen and (max-width:1024px) {
-		//   width: ;
-		// }
+	
 
 		.skillsContainer {
 			display: flex;
@@ -45,7 +48,6 @@
 			@media screen and (max-width: 1024px) {
 				width: 100%;
 				margin: 20px;
-				// background-color: green;
 			}
 			.skillEllipse {
 				display: flex;
@@ -69,25 +71,25 @@
 					top: 41%;
 					right: 10%;
 					left: 35%;
-					@media screen and (max-width:1400px) {
-            position:absolute;
-            right: 3%;
-            left: 33%;
-            top:38%;
+					@media screen and (max-width: 1400px) {
+						position: absolute;
+						right: 3%;
+						left: 33%;
+						top: 38%;
 					}
-          @media screen and (max-width:1024px) {
-            position:absolute;
-            right: 3%;
-            left: 39%;
-            top:40%;
+					@media screen and (max-width: 1024px) {
+						position: absolute;
+						right: 3%;
+						left: 39%;
+						top: 40%;
 					}
 					& > h1 {
-            @media screen and (max-width:1400px) {
-            font-size: 1.9rem;
-            }
-            @media screen and (max-width:1024px) {
-              font-size: 2.25rem;
-              }
+						@media screen and (max-width: 1400px) {
+							font-size: 1.9rem;
+						}
+						@media screen and (max-width: 1024px) {
+							font-size: 2.25rem;
+						}
 						font-family: "Lato", sans-serif;
 						font-size: 2.25rem;
 						color: #ffffff;
@@ -101,19 +103,30 @@
 			flex-direction: column;
 			justify-content: space-between;
 			width: 57%;
-			height: 136px;
 			margin-left: 20px;
+			@media screen and (max-width: 1700px) {
+				text-wrap: wrap;
+				height: 200px;
+			}
 
 			.skillTextHeading {
 				width: 98%;
 				height: 36px;
 				margin-bottom: 20px;
+				text-wrap: wrap;
 				& > h1 {
 					font-family: "Montserrat", sans-serif;
 					font-size: 2.25rem;
 					color: #ffff;
 					font-weight: bolder;
 					white-space: nowrap;
+					@media screen and (max-width: 1700px) {
+						text-wrap: wrap;
+						margin-bottom: 10px;
+					}
+					@media screen and (max-width: 1600px) {
+						margin-bottom: 20px;
+					}
 				}
 			}
 
@@ -123,12 +136,16 @@
 				height: 80xp;
 
 				& > p {
-          @media screen and (max-width:1400px) {
-   font-size: 1rem;
+
+          @media screen and (max-width: 1600px) {
+						font-size: 1.1rem;
 					}
-          @media screen and (max-width:1024px) {
-            font-size: 1.25rem;
-                   }
+					@media screen and (max-width: 1400px) {
+						font-size: 1rem;
+					}
+					@media screen and (max-width: 1024px) {
+						font-size: 1.25rem;
+					}
 					color: #ffffff;
 					letter-spacing: -0.05rem;
 					font-size: 1.25rem;
