@@ -19,7 +19,7 @@ function App() {
 			<Portfolio />
 			<Skills />
 			<Feedback />
-			{/* <AboutMe /> */}
+			<AboutMe />
 			{/* <Frame /> */}
 			{/* <Footer /> */}
 		</Layout>

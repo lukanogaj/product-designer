@@ -1,14 +1,13 @@
 .aboutMeHeader {
 	display: flex;
-	width: 31.37%;
-	height: 64px;
+	width: 31%;
 	font-family: "Anton", sans-serif;
 	text-align: center;
 	position: absolute;
 	left: 100px;
 	align-items: center;
 	& > h1 {
-		font-size: 3.333331vw;
+		font-size: 4rem;
 		color: #ffffff;
 		font-weight: 400;
 		margin-right: 38px;

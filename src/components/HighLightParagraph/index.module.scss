@@ -2,40 +2,52 @@
 	display: inline;
 	justify-content: space-between;
 	font-weight: 700;
-	width: 60%;
-	height: 400px;
+	width: 100%;
 	letter-spacing: 0.04rem;
 	white-space: normal;
 	font-weight: 700;
+	color: #fff;
+	font-size: 2.25rem;
+	line-height: 2rem;
+	letter-spacing: 0.04rem;
+  background-color: green;
 
-	.highlitedParagraph,
-	p {
-		display: inline;
-		width: 670px;
-		font-size: 1.875vw;
-		color: #ffffff;
-		// background-color: red;
-		// background: linear-gradient(to right, #fa709a, #fee140);
-		// background-clip: text;
-		// -webkit-text-fill-color: transparent;
-		& > span {
-			font-size: 1vw;
-			// background-color: #fff;
-			color: #fff;
+	.highlitedParagraph {
+		width: 100%;
+    background-color: red;
+		& > p {
+			display: inline;
+			width: 670px;
+			// font-size: 2.25rem;
+			// color: #ffffff;
 			// background: linear-gradient(to right, #fa709a, #fee140);
 			// background-clip: text;
 			// -webkit-text-fill-color: transparent;
+			// & > span {
+			// 	font-size: 2.25rem;
+			// 	// background-color: #fff;
+			// 	color: #fff;
+			// 	background-color: blue;
+
+			// 	// background: linear-gradient(to right, #fa709a, #fee140);
+			// 	// background-clip: text;
+			// 	// -webkit-text-fill-color: transparent;
+			// }
 		}
 	}
 
-	.paragraphDefault,
-	p {
-		display: inline;
+	.paragraphDefault {
 		width: 100%;
-		flex-wrap: wrap;
-		color: #ffffff;
-		& > span {
-			font-size: 1.875vw;
+		// background-color: red;
+		font-size: 2.25rem;
+		& > p {
+			display: inline;
+			width: 100%;
+			flex-wrap: wrap;
+			color: #ffffff;
+			& > span {
+				font-size: 2.25rem;
+			}
 		}
 	}
 
@@ -54,7 +66,7 @@
 	.greenClass {
 		display: inline;
 		width: 100%;
-		font-size: 1.875vw;
+		font-size: 2.25rem;
 		color: #ffffff;
 		background: linear-gradient(to left, #84fab0, #8fd3f4);
 		background-clip: text;
@@ -65,7 +77,7 @@
 	.blueClass {
 		display: inline;
 		width: 100%;
-		font-size: 1.875vw;
+		font-size: 2.25rem;
 		color: #ffffff;
 		background: linear-gradient(90deg, #e0c3fc, #8ec5fc);
 		background-clip: text;
@@ -75,8 +87,12 @@
 	.rainbowClass {
 		display: inline;
 		width: 100%;
-		font-size: 1.875vw;
+		font-size: 2.25rem;
 		color: #ffffff;
+		@media screen and (width: 1600px) {
+			font-size: 1rem;
+			background-color: blue;
+		}
 		background: linear-gradient(
 			89.9deg,
 			#ffe76a 6.02%,
