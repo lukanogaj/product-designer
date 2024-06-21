@@ -11,7 +11,6 @@ import Footer from "./components/Footer";
 import { useRef } from "react";
 
 function App() {
-	// const windowSize = useRef([window.innerWidth, window.innerHeight]);
 	return (
 		<Layout>
 			<Hero />
@@ -20,8 +19,8 @@ function App() {
 			<Skills />
 			<Feedback />
 			<AboutMe />
-			{/* <Frame /> */}
-			{/* <Footer /> */}
+			<Frame />
+			<Footer />
 		</Layout>
 	);
 }
