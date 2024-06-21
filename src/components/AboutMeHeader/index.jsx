@@ -4,9 +4,14 @@ import zigZag from "../Assests/Icons/zigzag.png";
 const AboutMeHeader = () => {
 	return (
 		<div className={styles.aboutMeHeader}>
-			<h1>About Me</h1>
+			<div className={styles.zigZagHead}>
+				<h1>About Me</h1>
+			</div>
 			<div className={styles.zigZag}>
-				<img src={zigZag} alt="" />
+				<img
+					src={zigZag}
+					alt=""
+				/>
 			</div>
 		</div>
 	);
