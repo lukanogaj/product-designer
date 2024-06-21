@@ -1,6 +1,7 @@
 import styles from "./index.module.scss";
 import logo from "../Assests/Icons/logo.png";
 import switchLogo from "../Assests/Icons/switchmode.png";
+import menu from "../Assests/Icons/menu.png";
 
 const Navbar = () => {
 	const handleDarkMode = () => {
@@ -38,6 +39,12 @@ const Navbar = () => {
 					{/* // onClick={() => handleDarkMode()} */}
 					Contact Me
 				</button>
+				<div className={styles.hamburger}>
+					<img
+						src={menu}
+						alt=""
+					/>
+				</div>
 			</div>
 		</div>
 	);
