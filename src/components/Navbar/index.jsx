@@ -39,13 +39,13 @@ const Navbar = () => {
 					{/* // onClick={() => handleDarkMode()} */}
 					Contact Me
 				</button>
-				<div className={styles.hamburger}>
+			</div>
+      <div className={styles.hamburger}>
 					<img
 						src={menu}
 						alt=""
 					/>
 				</div>
-			</div>
 		</div>
 	);
 };

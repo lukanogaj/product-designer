@@ -4,16 +4,31 @@
 	font-family: "Montserrat", sans-serif;
 	display: flex;
 	align-items: center;
+	align-content: center;
 	background-color: #000000;
 
 	@media screen and (max-width: 1024px) {
+		width: 100%;
 		padding: 0px 100px 0px 100px;
 	}
 
 	@media screen and (max-width: 768px) {
-		// display: none;
-		// background-color: red;
-		padding: 50px 22px 30px 22px;
+		width: 100%;
+		padding: 30px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.hamburger {
+		width: 100%;
+		cursor: pointer;
+		display: none;
+		@media only screen and (min-width: 320px) and (max-width: 768px) {
+			display: block;
+			width: 10%;
+			color: white;
+			cursor: pointer;
+		}
 	}
 }
 
@@ -47,10 +62,6 @@
 	justify-content: flex-end;
 	gap: 20px;
 	width: 25%;
-	@media screen and (max-width: 992px) {
-		display: none;
-		width: 85%;
-	}
 
 	@media screen and (max-width: 768px) {
 		display: none;
@@ -65,20 +76,5 @@
 		padding: 8px 20px;
 		border-radius: 5px;
 		cursor: pointer;
-	}
-
-	.hamburger {
-		width: 100%;
-		display: none;
-		@media screen and (max-width: 768px) {
-      background-color: red;
-			width: 85%;
-		}
-		& > img {
-			display: block;
-			@media screen and (max-width: 768px) {
-				width: 85%;
-			}
-		}
 	}
 }

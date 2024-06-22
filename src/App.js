@@ -14,13 +14,13 @@ function App() {
 	return (
 		<Layout>
 			<Hero />
-			<WorkEfficiency />
-			<Portfolio />
-			<Skills />
-			<Feedback />
-			<AboutMe />
-			<Frame />
-			<Footer />
+			{/* <WorkEfficiency /> */}
+			{/* <Portfolio /> */}
+			{/* <Skills /> */}
+			{/* <Feedback /> */}
+			{/* <AboutMe /> */}
+			{/* <Frame /> */}
+			{/* <Footer /> */}
 		</Layout>
 	);
 }
