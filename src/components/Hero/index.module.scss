@@ -41,22 +41,32 @@
 				color: #fff;
 				margin-bottom: 70px;
 				@media screen and (max-width: 1024px) {
-					width: 60%;
+					width: 70%;
 					display: flex;
 					justify-content: center;
 				}
 
 				& > h1 {
+					width: 100%;
 					font-size: 11.5rem;
 					line-height: 0.98;
 					@media screen and (max-width: 1400px) {
 						font-size: 9.6rem;
 					}
+
 					@media screen and (max-width: 1024px) {
 						width: 100%;
 						align-items: center;
 						white-space: normal;
 						letter-spacing: 0.3rem;
+						font-size: 12rem;
+					}
+
+					@media screen and (max-width: 992px) {
+						font-size: 9rem;
+					}
+					@media screen and (max-width: 768px) {
+						font-size: 9rem;
 					}
 				}
 
@@ -68,10 +78,17 @@
 					-webkit-text-fill-color: transparent;
 
 					@media screen and (max-width: 1400px) {
-						font-size: 5rem;
+						font-size: 5.2rem;
 					}
 					@media screen and (max-width: 1024px) {
-						font-size: 5.2rem;
+						font-size: 5rem;
+					}
+
+					@media screen and (max-width: 992px) {
+						font-size: 5rem;
+					}
+					@media screen and (max-width: 768px) {
+						font-size: 5rem;
 					}
 				}
 			}
@@ -81,7 +98,7 @@
 				width: 100%;
 				margin-bottom: 40px;
 				@media screen and (max-width: 1024px) {
-          width: 60%;
+					width: 60%;
 				}
 				.socialIcon {
 					border: solid 2px #fff;
@@ -111,7 +128,13 @@
 			text-align: center;
 			align-items: center;
 			font-weight: 100;
-			background-color: #292929;
+			// background-color: #292929;
+      background-color: red;
+			@media screen and (max-width: 768px) {
+        width: 80%;
+				margin: 60px;
+        text-align: center;
+			}
 			.cvText {
 				display: flex;
 				justify-content: space-between;
@@ -124,11 +147,12 @@
 				letter-spacing: 0.1rem;
 				font-weight: 100;
 				@media screen and (max-width: 1024px) {
-					width: 37%;
+					width: 100%;
 				}
 				.cvHead {
 					display: block;
 					font-size: 1.5rem;
+
 					& > h4 {
 						white-space: nowrap;
 						display: block;
