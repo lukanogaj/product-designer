@@ -4,16 +4,13 @@
 	align-content: center;
 	align-content: center;
 	text-align: center;
-	width: 83.34%;
-	height: 24px;
+	width: 83%;
 	margin-bottom: 23px;
 
 	.linksBtn {
 		display: flex;
-		width: 123.36%;
-		height: 24px;
+		width: 123%;
 		color: #be9ff6;
-
 
 		.linkBtns {
 			display: inline-block;
@@ -24,6 +21,7 @@
       margin-right: 5px;
       letter-spacing: 0.03rem;
       font-size: 0.729165vw;
+      padding: 6px;
 			& > button {
 				display: inline-block;
 				color: #784dc7;

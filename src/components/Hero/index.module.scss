@@ -1,10 +1,10 @@
 .container {
 	display: flex;
+	justify-content: space-between;
 	max-width: 100%;
 	gap: 30px;
-	// height: calc(100vh - 80px);
-	max-height: 800px;
-	margin: 60px 0px 153px 0px;
+	// max-height: 800px;
+	padding: 60px 0px 100px 0px;
 	background-color: #000;
 
 	@media screen and (max-width: 1024px) {
@@ -16,7 +16,7 @@
 	// The box with the headings social icons and cv download button
 	.main {
 		display: flex;
-		width: 50%;
+		width: 60%;
 		@media screen and (max-width: 1024px) {
 			display: flex;
 			justify-content: center;
@@ -27,7 +27,7 @@
 			width: 100%;
 			flex-direction: column;
 			@media screen and (max-width: 1024px) {
-				width: 100%;
+				width: 70%;
 				align-items: center;
 			}
 			// Two headings
@@ -39,16 +39,18 @@
 				width: 100%;
 				font-family: "Anton", sans-serif;
 				color: #fff;
-				margin-bottom: 70px;
+				padding-bottom: 20px;
 				@media screen and (max-width: 1024px) {
-					width: 70%;
+					width: 100%;
 					display: flex;
 					justify-content: center;
+					// padding: 120px;
+					// padding-bottom: 10px;
 				}
 
 				& > h1 {
 					width: 100%;
-					font-size: 11.5rem;
+					font-size: 12.8rem;
 					line-height: 0.98;
 					@media screen and (max-width: 1400px) {
 						font-size: 9.6rem;
@@ -63,7 +65,7 @@
 					}
 
 					@media screen and (max-width: 992px) {
-						font-size: 9rem;
+						font-size: 11rem;
 					}
 					@media screen and (max-width: 768px) {
 						font-size: 9rem;
@@ -72,11 +74,10 @@
 
 				& > h2 {
 					width: 100%;
-					font-size: 6.5rem;
+					font-size: 7.2rem;
 					background: linear-gradient(to right, #fa709a, #fee140);
 					background-clip: text;
 					-webkit-text-fill-color: transparent;
-
 					@media screen and (max-width: 1400px) {
 						font-size: 5.2rem;
 					}
@@ -85,11 +86,10 @@
 					}
 
 					@media screen and (max-width: 992px) {
-						font-size: 5rem;
+						font-size: 5.4rem;
 					}
 					@media screen and (max-width: 768px) {
-						font-size: 5.5rem;
-            background-color: green;
+						font-size: 5.3rem;
 					}
 				}
 			}
@@ -97,9 +97,9 @@
 				display: flex;
 				justify-content: space-between;
 				width: 100%;
-				margin-bottom: 40px;
+				padding-bottom: 40px;
 				@media screen and (max-width: 1024px) {
-					width: 60%;
+					width: 100%;
 				}
 				.socialIcon {
 					border: solid 2px #fff;
@@ -124,50 +124,43 @@
 			align-content: center;
 			font-family: "Montserrat", sans-serif;
 			width: 100%;
-			// height: 52px;
-			white-space: nowrap;
 			text-align: center;
 			align-items: center;
 			font-weight: 100;
 			background-color: #292929;
 
-	
 			@media screen and (max-width: 1024px) {
-        width: 60%;
+				width: 100%;
 				margin: 60px;
-        text-align: center;
+				text-align: center;
 			}
 			@media screen and (max-width: 768px) {
-        width: 80%;
+				width: 80%;
 				margin: 60px;
-        text-align: center;
+				text-align: center;
 			}
 			.cvText {
 				display: flex;
 				justify-content: space-between;
 				width: 55%;
 				height: 100%;
-				align-items: center;
-				align-content: center;
 				color: #fff;
 				letter-spacing: 0.1rem;
-        padding: 10px;
+				padding: 10px;
 				font-weight: 100;
 				@media screen and (max-width: 1024px) {
 					width: 65%;
-          justify-content: space-around;
-          text-align: center;
-          align-items: center;
-          align-content: center;
+
 				}
-        @media screen and (max-width: 992px) {
-          width: 78%;
-          text-align: center;
-        }
-        @media screen and (max-width: 768px) {
-          width: 62%;
-          text-align: center;
-        }
+				@media screen and (max-width: 992px) {
+					width: 78%;
+					text-align: center;
+				}
+				@media screen and (max-width: 768px) {
+					width: 100%;
+          display: flex;
+					text-align: center;
+				}
 				.cvHead {
 					display: block;
 					font-size: 1.5rem;
@@ -184,10 +177,10 @@
 					width: 100%;
 					height: 100%;
 					text-align: center;
-          text-align: center;
+					text-align: center;
 					& > img {
 						display: block;
-						padding: 5px 0px 0px 8px ;
+						padding: 5px 0px 0px 15px;
 					}
 				}
 			}
@@ -205,12 +198,16 @@
 
 // Middle star
 .portal {
-	width: 180px;
-	height: 180px;
+	width: 100%;
+	height: 100%;
+
 	@media screen and (max-width: 1727px) {
 		display: none;
 	}
 	& > img {
-		width: 100%;
+		display: block;
+		width: 180px;
+		height: 180px;
+    margin: auto;
 	}
 }
