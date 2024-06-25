@@ -5,31 +5,57 @@
 	align-content: center;
 	text-align: center;
 	width: 83%;
-	margin-bottom: 23px;
+	padding-bottom: 23px;
 
 	.linksBtn {
 		display: flex;
-		width: 123%;
+		width: 100%;
+		padding: 10px 2px 0px 10px;
 		color: #be9ff6;
-
 		.linkBtns {
 			display: inline-block;
 			width: 100%;
-      color: #784dc7;
-      border: solid 1px #be9ff6;
-      border-radius: 12px;
-      margin-right: 5px;
-      letter-spacing: 0.03rem;
-      font-size: 0.729165vw;
-      padding: 6px;
+			color: #784dc7;
+			border: solid 1px #be9ff6;
+			border-radius: 12px;
+			letter-spacing: 0.03rem;
+			padding: 5px 9px 9px 9px;
+			white-space: nowrap;
+			@media screen and (max-width: 1400px) {
+				width: 100%;
+				padding: 0;
+				font-size: 0.7rem;
+				color: #784dc7;
+			}
+			@media screen and (max-width: 1024px) {
+				width: 100%;
+				padding: 0;
+				font-size: 0.8rem;
+				color: #784dc7;
+			}
+
+      @media screen and (max-width: 768px) {
+				width: 100%;
+				padding: 0;
+				font-size: 1.2rem;
+				color: #784dc7;
+        padding: 10px;
+			}
+
 			& > button {
+				// width: 100%;
 				display: inline-block;
 				color: #784dc7;
 				border: none;
 				align-items: center;
 				border: solid 1px #be9ff6;
 				border-radius: 12px;
-				text-align: center;
+				font-size: 1rem;
+				@media screen and (max-width: 1400px) {
+					width: 100%;
+					padding: 10px;
+					font-size: 0.4rem;
+				}
 			}
 		}
 	}
