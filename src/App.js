@@ -17,8 +17,8 @@ function App() {
 			<WorkEfficiency />
 			<Portfolio />
 			<Skills />
-			{/* <Feedback /> */}
-			{/* <AboutMe /> */}
+			<Feedback />
+			<AboutMe />
 			{/* <Frame /> */}
 			{/* <Footer /> */}
 		</Layout>

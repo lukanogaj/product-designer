@@ -14,7 +14,7 @@
 		flex-direction: column;
 		align-items: center;
 		width: 80%;
-		margin-top: 147px;
+		padding-top: 147px;
 
 		.feedbackHeading {
 			width: 100%;
@@ -26,6 +26,9 @@
 				font-weight: 600;
         @media screen and (max-width:1024px){
           font-size: 2.5rem;
+        }
+        @media screen and (max-width:768px){
+          font-size: 1.5rem;
         }
 			}
 		}
@@ -41,7 +44,13 @@
 				letter-spacing: 0.3rem;
 				line-height: 4rem;
         @media screen and (max-width:1024px){
-          font-size: 2.5rem;
+          font-size: 2rem;
+          letter-spacing: 0rem;
+          line-height: 2.7rem;
+          text-align: center;
+        }
+        @media screen and (max-width:768px){
+          font-size: 1.5rem;
         }
 			}
 		}
