@@ -6,7 +6,7 @@ const Frame = () => {
 	return (
 		<div className={styles.frameContainer}>
 			<div className={styles.container}>
-				<div className={styles.frameWaves}>
+				<div className={styles.frameWavesFirst}>
 					<img
 						src={frameFooter}
 						alt=""

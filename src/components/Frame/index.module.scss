@@ -25,9 +25,24 @@
 			position: relative;
 			background-color: #a87ff3;
 			padding: 55px 0px 55px 0px;
+      .frameWavesFirst {
+				width: 9%;
+        transform: rotate(90deg);
+        background-color: red;
+				& > img {
+          background-color: red;
+          transform: rotate(90deg);
+					display: block;
+					width: 100%;
+				}
+			}
+
 			.frameWaves {
 				width: 9%;
+        transform: rotate(90deg);
+        background-color: red;
 				& > img {
+          transform: rotate(90deg);
 					display: block;
 					width: 100%;
 				}

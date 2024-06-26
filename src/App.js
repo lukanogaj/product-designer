@@ -19,8 +19,8 @@ function App() {
 			<Skills />
 			<Feedback />
 			<AboutMe />
-			{/* <Frame /> */}
-			{/* <Footer /> */}
+			<Frame />
+			<Footer />
 		</Layout>
 	);
 }
