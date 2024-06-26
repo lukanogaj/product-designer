@@ -30,6 +30,10 @@
 		align-items: center;
 		gap: 20px;
 
+		@media screen and (max-width: 1400px) {
+			gap: 10px;
+			// flex-wrap: nowrap;
+		}
 		@media screen and (max-width: 768px) {
 			display: flex;
 			flex-direction: column;
@@ -39,19 +43,21 @@
 
 		.skillsContainer {
 			display: flex;
+			// justify-content: space-around;
 			background-color: #010101;
 			align-items: center;
 			width: 49%;
-			padding: 40px 50px 60px 40px;
+			padding: 30px 40px 30px 40px;
 			border: solid 1px #737373;
 			border-radius: 10px;
 
 			@media screen and (max-width: 1400px) {
-				width: 100%;
-				padding: 40px 50px 60px 40px;
+				justify-content: space-evenly;
+				flex-wrap: wrap;
 			}
 			@media screen and (max-width: 1024px) {
-				width: 100%;
+				// width: 100%;
+        justify-content: space-between;
 			}
 
 			@media screen and (max-width: 768px) {
@@ -65,7 +71,12 @@
 				flex-direction: column;
 				position: relative;
 				width: 26%;
-				margin-left: 40px;
+				// padding-left: 40px;
+				@media screen and (max-width: 1400px) {
+					font-size: 1.7rem;
+					// padding-left: 10px;
+					width: 30%;
+				}
 
 				.ellipse {
 					position: relative;
@@ -82,10 +93,17 @@
 					top: 41%;
 					right: 10%;
 					left: 35%;
-					@media screen and (max-width: 1400px) {
+
+					@media screen and (max-width: 1600px) {
 						position: absolute;
 						right: 3%;
 						left: 33%;
+						top: 38%;
+					}
+					@media screen and (max-width: 1400px) {
+						position: absolute;
+						right: 3%;
+						left: 29%;
 						top: 38%;
 					}
 					@media screen and (max-width: 1024px) {
@@ -104,7 +122,7 @@
 					& > h1 {
 						display: block;
 						@media screen and (max-width: 1400px) {
-							font-size: 1.9rem;
+							font-size: 1.4rem;
 						}
 						@media screen and (max-width: 1024px) {
 							font-size: 2.25rem;
@@ -134,8 +152,14 @@
 					color: #ffff;
 					font-weight: bolder;
 					white-space: nowrap;
-					@media screen and (max-width: 1700px) {
-						text-wrap: wrap;
+
+					@media screen and (max-width: 1600px) {
+						white-space: nowrap;
+						font-size: 1.7rem;
+					}
+					@media screen and (max-width: 1400px) {
+						white-space: nowrap;
+						font-size: 1.2rem;
 					}
 				}
 			}
@@ -150,7 +174,7 @@
 						font-size: 1rem;
 					}
 					@media screen and (max-width: 1400px) {
-						font-size: 1rem;
+						font-size: 0.6rem;
 					}
 					@media screen and (max-width: 1024px) {
 						font-size: 1.25rem;
