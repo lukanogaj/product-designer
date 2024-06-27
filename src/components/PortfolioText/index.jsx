@@ -9,9 +9,9 @@ const PortfolioText = () => {
 	const slicedArray =
 		windowsize[0] <= 1024 ? dataForPortfolio.slice(0, 4) : dataForPortfolio;
 
-	console.log(slicedArray);
+	// console.log(slicedArray);
 
-	console.log(windowsize);
+	// console.log(windowsize);
 	return (
 		<div className={styles.portfolioText}>
 			{slicedArray.map((card) => (

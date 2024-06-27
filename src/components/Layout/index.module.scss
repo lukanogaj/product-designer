@@ -1,3 +1,6 @@
+
+
+
 .layoutContainer {
 	display: flex;
 	justify-content: center;
@@ -5,6 +8,7 @@
 }
 
 .layout {
+  background-color: var(--background);
 	display: flex;
 	flex-direction: column;
 	width: 100%;

@@ -2,13 +2,17 @@ import styles from "./index.module.scss";
 import logo from "../Assests/Icons/logo.png";
 import switchLogo from "../Assests/Icons/switchmode.png";
 import menu from "../Assests/Icons/menu.png";
-
+import useLocalStorage from "use-local-storage";
 const Navbar = () => {
-	const handleDarkMode = () => {
+	const [theme, setTheme] = useLocalStorage("theme" ? "dark" : "light");
+
+	const switchTheme = () => {
+		const newTheme = theme === "light" ? "dark" : "light";
+		setTheme(newTheme);
 		console.log("clicked");
 	};
 	return (
-		<div className={styles.container}>
+		<div className={styles.container} data-theme={theme}>
 			{/* Right hand side logo */}
 			<div className={styles.logo}>
 				<img
@@ -29,23 +33,20 @@ const Navbar = () => {
 			<div className={styles.controls}>
 				<div
 					className={styles.switchLogo}
-					onClick={() => handleDarkMode()}>
+					onClick={() => switchTheme()}>
 					<img
 						src={switchLogo}
 						alt=""
 					/>
 				</div>
-				<button>
-					{/* // onClick={() => handleDarkMode()} */}
-					Contact Me
-				</button>
+				<button>Contact Me</button>
 			</div>
-      <div className={styles.hamburger}>
-					<img
-						src={menu}
-						alt=""
-					/>
-				</div>
+			<div className={styles.hamburger}>
+				<img
+					src={menu}
+					alt=""
+				/>
+			</div>
 		</div>
 	);
 };
