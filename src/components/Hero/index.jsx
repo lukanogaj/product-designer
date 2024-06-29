@@ -4,13 +4,9 @@ import portal from "../Assests/portal.png";
 import vintage from "../Assests/vintage.png";
 import arrowDown from "../Assests/Icons/arrow-down.png";
 
-const Hero = ({ theme, setTheme, switchTheme }) => {
+const Hero = ({ theme, setTheme }) => {
 	return (
-		<div
-			className={styles.container}
-			theme={theme}
-			setTheme={setTheme}
-			switchTheme={switchTheme}>
+		<div className={styles.container}>
 			{/* Main div with headings and portal logo on left hand side */}
 			<div className={styles.main}>
 				<div className={styles.text}>

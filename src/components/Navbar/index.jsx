@@ -1,18 +1,30 @@
 import styles from "./index.module.scss";
+
+import { useState } from "react";
 import logo from "../Assests/Icons/logo.png";
-import switchLogo from "../Assests/Icons/switchmode.png";
+// import switchLogo from "../Assests/Icons/switchmode.png";
+import darkTheme from "../Assests/dark-them.png";
+import lightTheme from "../Assests/light-them.png";
 import menu from "../Assests/Icons/menu.png";
 import useLocalStorage from "use-local-storage";
 const Navbar = () => {
 	const [theme, setTheme] = useLocalStorage("theme" ? "dark" : "light");
+	const [show, setShow] = useState(true);
 
+	// ///////////////////////////////
 	const switchTheme = () => {
 		const newTheme = theme === "light" ? "dark" : "light";
 		setTheme(newTheme);
 		console.log("clicked");
 	};
+	const changeThemeIcon = () => {
+		setShow(!show);
+		console.log("hello");
+	};
 	return (
-		<div className={styles.container} data-theme={theme}>
+		<div
+			className={styles.container}
+			data-theme={theme}>
 			{/* Right hand side logo */}
 			<div className={styles.logo}>
 				<img
@@ -33,9 +45,12 @@ const Navbar = () => {
 			<div className={styles.controls}>
 				<div
 					className={styles.switchLogo}
-					onClick={() => switchTheme()}>
+					onClick={() => {
+						switchTheme();
+						changeThemeIcon();
+					}}>
 					<img
-						src={switchLogo}
+						src={show ? darkTheme : lightTheme}
 						alt=""
 					/>
 				</div>
