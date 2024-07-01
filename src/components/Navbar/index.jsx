@@ -1,30 +1,27 @@
 import styles from "./index.module.scss";
-
 import { useState } from "react";
 import logo from "../Assests/Icons/logo.png";
-// import switchLogo from "../Assests/Icons/switchmode.png";
 import darkTheme from "../Assests/dark-them.png";
 import lightTheme from "../Assests/light-them.png";
 import menu from "../Assests/Icons/menu.png";
 import useLocalStorage from "use-local-storage";
-const Navbar = () => {
-	const [theme, setTheme] = useLocalStorage("theme" ? "dark" : "light");
-	const [show, setShow] = useState(true);
+const Navbar = ({ switchTheme }) => {
+	// const [theme, setTheme] = useLocalStorage("theme" ? "dark" : "light");
+	const [show, setShow] = useState("");
 
-	// ///////////////////////////////
-	const switchTheme = () => {
-		const newTheme = theme === "light" ? "dark" : "light";
-		setTheme(newTheme);
-		console.log("clicked");
-	};
-	const changeThemeIcon = () => {
+	// Function to change the theme and icon
+	const changeTheme = () => {
+		// const newTheme = theme === "light" ? "dark" : "light";
+		// setTheme(newTheme);
+		switchTheme(show);
 		setShow(!show);
 		console.log("hello");
 	};
 	return (
 		<div
 			className={styles.container}
-			data-theme={theme}>
+			// data-theme={theme}
+		>
 			{/* Right hand side logo */}
 			<div className={styles.logo}>
 				<img
@@ -46,11 +43,10 @@ const Navbar = () => {
 				<div
 					className={styles.switchLogo}
 					onClick={() => {
-						switchTheme();
-						changeThemeIcon();
+						changeTheme();
 					}}>
 					<img
-						src={show ? darkTheme : lightTheme}
+						src={show ? lightTheme : darkTheme}
 						alt=""
 					/>
 				</div>

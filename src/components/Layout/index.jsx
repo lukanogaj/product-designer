@@ -1,12 +1,12 @@
 import styles from "./index.module.scss";
 import PropTypes from "prop-types";
-import Navbar from "../Navbar";
+import { useState } from "react";
+import useLocalStorage from "use-local-storage";
 
 const Layout = ({ children }) => {
 	return (
 		<div className={styles.layoutContainer}>
 			<div className={styles.layout}>
-				<Navbar />
 				{children}
 			</div>
 		</div>
