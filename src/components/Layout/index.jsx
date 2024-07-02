@@ -6,9 +6,7 @@ import useLocalStorage from "use-local-storage";
 const Layout = ({ children }) => {
 	return (
 		<div className={styles.layoutContainer}>
-			<div className={styles.layout}>
-				{children}
-			</div>
+			<div className={styles.layout}>{children}</div>
 		</div>
 	);
 };

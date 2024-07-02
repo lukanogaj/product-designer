@@ -9,26 +9,49 @@ import Feedback from "./components/Feedback";
 import AboutMe from "./components/AboutMe";
 import Frame from "./components/Frame";
 import Footer from "./components/Footer";
-import { useRef } from "react";
+import { useState, useEffect } from "react";
 import useLocalStorage from "use-local-storage";
-// import { useState } from "react";
 
 function App() {
-	const [theme, setTheme] = useLocalStorage("theme" ? "dark" : "light");
+	const [theme, setTheme] = useState("");
 
-	const switchTheme = () => {
-		const newTheme = theme === "light" ? "dark" : "light";
-		setTheme(newTheme);
-		console.log("hello");
+	const initialTheme = () => {
+		console.log("Heart");
+		localStorage.getItem("theme");
+		return initialTheme ? initialTheme : "light";
 	};
 
-	// const changeThemeIcon = () => {
-	// 	setShow(!show);
-	// 	console.log("hello");
-	// };
+	function getThemeFromLocalStorage() {
+		console.log("NO");
+		const savedTheme = localStorage.getItem("theme");
+		if (savedTheme) {
+			setTheme(savedTheme);
+		}
+	}
+
+	function toggleTheme() {
+		setTheme((prevTheme) => {
+			console.log("Good");
+			const newTheme = prevTheme === "light" ? "dark" : "light";
+			localStorage.setItem("theme", newTheme);
+			return newTheme;
+		});
+	}
+
+	useEffect(() => {
+		getThemeFromLocalStorage();
+	}, [theme]);
+
 	return (
-		<Layout>
-			<Navbar switchTheme={switchTheme} />
+		<Layout
+			initialTheme={initialTheme}
+			toggleTheme={toggleTheme}
+			getThemeFromLocalStorage={getThemeFromLocalStorage}>
+			<Navbar
+				initialTheme={initialTheme}
+				toggleTheme={toggleTheme}
+				getThemeFromLocalStorage={getThemeFromLocalStorage}
+			/>
 			<Hero />
 			<WorkEfficiency />
 			<Portfolio />
