@@ -21,7 +21,7 @@ const Navbar = ({
 	};
 	return (
 		<div
-			className={styles.container}
+			className={`${styles.container} ${theme}`}
 			data-theme={theme}>
 			{/* Right hand side logo */}
 			<div className={styles.logo}>
@@ -45,8 +45,6 @@ const Navbar = ({
 					className={styles.switchLogo}
 					onClick={() => {
 						changeThemeIcon();
-						initialTheme();
-						getThemeFromLocalStorage();
 						toggleTheme();
 					}}>
 					<img

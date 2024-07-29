@@ -15,42 +15,51 @@ import useLocalStorage from "use-local-storage";
 function App() {
 	const [theme, setTheme] = useState("");
 
-	const initialTheme = () => {
-		console.log("Heart");
-		localStorage.getItem("theme");
-		return initialTheme ? initialTheme : "light";
-	};
+  const initialTheme=()=>{
+console.log('Hello');
+if(typeof window !== 'undefined'){
+  const val = localStorage.getItem('theme');
+  return val ? JSON.parse(val) :themeType.light
+}
+  }
 
-	function getThemeFromLocalStorage() {
-		console.log("NO");
-		const savedTheme = localStorage.getItem("theme");
-		if (savedTheme) {
-			setTheme(savedTheme);
-		}
-	}
+	// const initialTheme = () => {
+	// 	console.log("Heart");
+	// 	localStorage.getItem("theme");
+	// 	return initialTheme ? initialTheme : "light";
+	// };
 
-	function toggleTheme() {
-		setTheme((prevTheme) => {
-			console.log("Good");
-			const newTheme = prevTheme === "light" ? "dark" : "light";
-			localStorage.setItem("theme", newTheme);
-			return newTheme;
-		});
-	}
+	// function getThemeFromLocalStorage() {
+	// 	console.log("NO");
+	// 	const savedTheme = localStorage.getItem("theme");
+	// 	if (savedTheme) {
+	// 		setTheme(savedTheme);
+	// 	}
+	// }
 
-	useEffect(() => {
-		getThemeFromLocalStorage();
-	}, [theme]);
+	// function toggleTheme() {
+	// 	setTheme((prevTheme) => {
+	// 		console.log("Good");
+	// 		const newTheme = prevTheme === "light" ? "dark" : "light";
+	// 		localStorage.setItem("theme", newTheme);
+	// 		return newTheme;
+	// 	});
+	// }
+
+	// useEffect(() => {
+	// 	getThemeFromLocalStorage();
+	// }, [theme]);
 
 	return (
 		<Layout
 			initialTheme={initialTheme}
-			toggleTheme={toggleTheme}
-			getThemeFromLocalStorage={getThemeFromLocalStorage}>
+			// toggleTheme={toggleTheme}
+			// getThemeFromLocalStorage={getThemeFromLocalStorage}
+      >
 			<Navbar
-				initialTheme={initialTheme}
-				toggleTheme={toggleTheme}
-				getThemeFromLocalStorage={getThemeFromLocalStorage}
+				// initialTheme={initialTheme}
+				// toggleTheme={toggleTheme}
+				// getThemeFromLocalStorage={getThemeFromLocalStorage}
 			/>
 			<Hero />
 			<WorkEfficiency />

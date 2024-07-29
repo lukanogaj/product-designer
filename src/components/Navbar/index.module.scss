@@ -1,21 +1,21 @@
-:root {
-	--background: #000;
-	--dark-theme: #000000;
-	// /* --text-primary: #000;
-	// --text-secondary: #8e05c2;
-	// --accent: #8e05c2;
-	// --border: #333;
-	// --form-bg: #fff; */
-}
+// :root {
+// 	--background: #fff;
+// 	--dark-theme: #000000;
+// 	// /* --text-primary: #000;
+// 	// --text-secondary: #8e05c2;
+// 	// --accent: #8e05c2;
+// 	// --border: #333;
+// 	// --form-bg: #fff; */
+// }
 
-.dark {
-	--background: #000;
-	/* --text-primary: #fff;
-  --text-secondary: #8e05c2;
-  --accent: #8e05c2;
-  --border: #808080;
-  --form-bg: #191919; */
-}
+// .dark {
+// 	--background: #000;
+// 	/* --text-primary: #fff;
+//   --text-secondary: #8e05c2;
+//   --accent: #8e05c2;
+//   --border: #808080;
+//   --form-bg: #191919; */
+// }
 
 .container {
 	width: 100%;
@@ -25,7 +25,12 @@
 	align-items: center;
 	align-content: center;
 	background-color: var(--background);
-
+	&.light {
+		--background: #000000;
+	}
+	&.dark {
+		--background: #ffffff;
+	}
 	@media screen and (max-width: 1024px) {
 		width: 100%;
 		padding: 0px 100px 0px 100px;
@@ -75,6 +80,7 @@
 		font-size: 1rem;
 	}
 }
+// Dark and light mode
 
 .controls {
 	display: flex;
